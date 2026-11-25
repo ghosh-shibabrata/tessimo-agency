@@ -184,8 +184,8 @@ export function AutomationShowcase() {
           </div>
 
           {/* Progress Timeline Nodes */}
-          <div className="px-6 py-3.5 bg-[#FAFAFC] border-b border-black/[0.06] overflow-x-auto">
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 min-w-[620px] sm:min-w-0">
+          <div className="px-4 sm:px-6 py-3.5 bg-[#FAFAFC] border-b border-black/[0.06] overflow-x-auto no-scrollbar">
+            <div className="flex sm:grid sm:grid-cols-5 gap-2 sm:gap-2.5 min-w-max sm:min-w-0">
               {STEPS.map((step) => {
                 const isActive = currentStep === step.id;
                 const isPassed = currentStep > step.id;
@@ -195,7 +195,7 @@ export function AutomationShowcase() {
                   <button
                     key={step.id}
                     onClick={() => handleStepClick(step.id)}
-                    className={`text-left p-3 rounded-2xl border transition-all duration-200 relative ${
+                    className={`text-left p-2.5 sm:p-3 rounded-2xl border transition-all duration-200 relative min-w-[135px] sm:min-w-0 flex-shrink-0 sm:flex-shrink cursor-pointer ${
                       isActive
                         ? "bg-[#1D1D1F] text-white border-black shadow-xs"
                         : isPassed

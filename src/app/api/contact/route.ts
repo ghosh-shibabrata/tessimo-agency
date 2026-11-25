@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, company, service, description, timeline, scope } = body;
+    const { name, email, phone, company, service, description, timeline, scope } = body;
 
     // Server-side validation
     if (!name || typeof name !== "string" || name.trim().length === 0) {
@@ -33,6 +33,7 @@ export async function POST(request: Request) {
       timestamp: new Date().toISOString(),
       name,
       email,
+      phone: phone || "N/A",
       company: company || "N/A",
       service: service || "Both",
       timeline: timeline || "Standard Enterprise",
