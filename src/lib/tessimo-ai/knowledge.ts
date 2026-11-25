@@ -25,6 +25,7 @@ export interface AgencyKnowledge {
   founder: {
     name: string;
     role: string;
+    email: string;
     linkedin: string;
     github: string;
     bio: string;
@@ -72,6 +73,7 @@ export const TESSIMO_KNOWLEDGE: AgencyKnowledge = {
   founder: {
     name: "Shibabrata Ghosh",
     role: "Founder & Lead Creative Technologist",
+    email: "shibabrata@tessimo.in",
     linkedin: "https://www.linkedin.com/in/shibabrata-ghosh/",
     github: "https://github.com/ghosh-shibabrata",
     bio: "Systems architect and creative technologist leading Tessimo. Personally oversees all client architectures with a guarantee of under 2-hour response, 100% IP ownership, and zero junior handoffs.",

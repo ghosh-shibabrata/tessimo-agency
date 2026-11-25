@@ -30,35 +30,35 @@ export default function Home() {
       {/* 03. Manifesto & Philosophical Visual Pause */}
       <StatementSection />
 
-      {/* 04. Executive Leadership & Founder Commitment */}
-      <FounderSection />
-
-      {/* 05. Core Disciplines & Bento Grid Highlights */}
+      {/* 04. Core Disciplines & Bento Grid Highlights */}
       <ServicesSection />
 
-      {/* 06. Flagship Selected Work & Case Studies */}
+      {/* 05. Flagship Selected Work & Case Studies */}
       <SelectedWorkSection />
 
-      {/* 07. Apple Intelligence Interactive Automation Pipeline */}
+      {/* 06. Apple Intelligence Interactive Automation Pipeline */}
       <AutomationShowcase />
 
-      {/* 08. Autonomous Tech Stack & Partner Ecosystem */}
+      {/* 07. Autonomous Tech Stack & Partner Ecosystem */}
       <TechEcosystemSection />
 
-      {/* 09. Full Specification & Capability Matrix */}
+      {/* 08. Full Specification & Capability Matrix */}
       <CapabilitiesSection />
 
-      {/* 10. Structured 4-Milestone Client Process */}
+      {/* 09. Structured 4-Milestone Client Process */}
       <ProcessSection />
 
-      {/* 11. Transparent Engagement & Investment Models */}
+      {/* 10. Transparent Engagement & Investment Models */}
       <EngagementModelsSection />
 
-      {/* 12. Editorial Insights & Engineering Perspectives */}
+      {/* 11. Editorial Insights & Engineering Perspectives */}
       <BlogSection />
 
-      {/* 13. Architectural Advisory & Enterprise FAQ */}
+      {/* 12. Architectural Advisory & Enterprise FAQ */}
       <FaqSection />
+
+      {/* 13. Executive Leadership & Founder Commitment (Closing Trust Seal) */}
+      <FounderSection />
 
       {/* 14. Apple Consultation Intake & Contact */}
       <ContactSection />

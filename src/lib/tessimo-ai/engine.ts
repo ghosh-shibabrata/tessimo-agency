@@ -134,7 +134,8 @@ export function processTessimoAIQuery(
     return {
       id: "founder-profile",
       intent: "FOUNDER",
-      text: `### Shibabrata Ghosh — Founder & Lead Technologist\n\nTessimo was founded and is directed by **Shibabrata Ghosh**.\n\n• **Role**: Founder & Lead Creative Technologist\n• **Direct Oversight**: Shibabrata personally architects and reviews all client platforms with zero junior handoffs.\n• **LinkedIn**: [linkedin.com/in/shibabrata-ghosh](https://www.linkedin.com/in/shibabrata-ghosh/)\n• **GitHub**: [github.com/ghosh-shibabrata](https://github.com/ghosh-shibabrata)\n• **Direct Email**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nShibabrata guarantees our under 2-hour executive response protocol and 100% intellectual property ownership.`,
+      text: `### Shibabrata Ghosh — Founder & Lead Technologist\n\nTessimo was founded and is directed by **Shibabrata Ghosh**.\n\n• **Role**: Founder & Lead Creative Technologist\n• **Direct Oversight**: Shibabrata personally architects and reviews all client platforms with zero junior handoffs.\n• **LinkedIn**: [linkedin.com/in/shibabrata-ghosh](https://www.linkedin.com/in/shibabrata-ghosh/)\n• **GitHub**: [github.com/ghosh-shibabrata](https://github.com/ghosh-shibabrata)\n• **Direct Founder Email**: [shibabrata@tessimo.in](mailto:shibabrata@tessimo.in)
+• **Studio Inquiries**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nShibabrata guarantees our under 2-hour executive response protocol and 100% intellectual property ownership.`,
       suggestedPills: [
         "View Founder Section",
         "Website Pricing",
@@ -457,7 +458,8 @@ export function processTessimoAIQuery(
   return {
     id: "fallback",
     intent: "GENERAL_KNOWLEDGE",
-    text: `I understand you are inquiring about Tessimo Agency.\n\nAt Tessimo, we build **high-converting bespoke websites** and **24/7 autonomous AI systems** so your business never misses a lead or loses a customer.\n\n• **Website Platforms**: ${isINR ? "₹4,999 (Starter) / ₹9,999 (Gold) / ₹16,999 (Premium)" : "$499 (Starter) / $799 (Gold) / $999 (Premium)"}\n• **AI Automation**: Setup starts at ${isINR ? "₹19,999" : "$1,499"} + tailored retainer\n• **Response Guarantee**: Under 2 business hours\n• **Direct Email**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nWhich area would you like to explore?`,
+    text: `I understand you are inquiring about Tessimo Agency.\n\nAt Tessimo, we build **high-converting bespoke websites** and **24/7 autonomous AI systems** so your business never misses a lead or loses a customer.\n\n• **Website Platforms**: ${isINR ? "₹4,999 (Starter) / ₹9,999 (Gold) / ₹16,999 (Premium)" : "$499 (Starter) / $799 (Gold) / $999 (Premium)"}\n• **AI Automation**: Setup starts at ${isINR ? "₹19,999" : "$1,499"} + tailored retainer\n• **Response Guarantee**: Under 2 business hours\n• **Direct Founder Email**: [shibabrata@tessimo.in](mailto:shibabrata@tessimo.in)
+• **Studio Inquiries**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nWhich area would you like to explore?`,
     suggestedPills: [
       "Website Pricing",
       "AI Automation Plans",
