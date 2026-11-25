@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { TessimoAIWidget } from "@/components/ai/TessimoAIWidget";
 import { JsonLd } from "@/components/seo/JsonLd";
 import "./globals.css";
 
@@ -60,11 +61,12 @@ export const metadata: Metadata = {
   publisher: "Tessimo Agency Inc.",
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg?v=3", type: "image/svg+xml" },
+      { url: "/favicon.ico?v=3", sizes: "any" },
+      { url: "/icon.svg?v=3", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    shortcut: ["/favicon.ico"],
+    apple: [{ url: "/apple-touch-icon.png?v=3", sizes: "180x180" }],
+    shortcut: ["/favicon.ico?v=3"],
   },
   formatDetection: {
     email: false,
@@ -119,12 +121,16 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
     >
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
+        <link rel="alternate icon" href="/favicon.ico?v=3" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
         <JsonLd />
       </head>
       <body className="min-h-screen bg-[#FBFBFD] text-[#1D1D1F] font-sans selection:bg-[#0D9488]/20 selection:text-[#1D1D1F] relative flex flex-col">
         <Navbar />
         <div className="flex-1 pt-12">{children}</div>
         <Footer />
+        <TessimoAIWidget />
       </body>
     </html>
   );

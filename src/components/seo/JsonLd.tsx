@@ -13,7 +13,7 @@ export function JsonLd() {
     description:
       "Tessimo is an award-winning creative technology and AI automation agency engineering bespoke digital experiences, autonomous AI agents, and workflow integrations for forward-thinking enterprises.",
     slogan: "Less manual. More momentum.",
-    email: "hello@tessimo.studio",
+    email: "hello@tessimo.in",
     priceRange: "$$",
     currenciesAccepted: "USD, EUR, GBP, INR",
     paymentAccepted: "Credit Card, Wire Transfer, Stripe",

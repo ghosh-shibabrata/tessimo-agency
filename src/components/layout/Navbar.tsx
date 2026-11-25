@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { TessimoIcon } from "@/components/brand/TessimoIcon";
-import { ArrowUpRight, Calendar } from "lucide-react";
+import { ArrowUpRight, Calendar, Sparkles } from "lucide-react";
 
 const NAV_LINKS = [
   { name: "Services", href: "#services" },
@@ -81,10 +81,21 @@ export function Navbar() {
         </nav>
 
         {/* Right: Apple Pill Action Buttons */}
-        <div className="hidden md:flex items-center gap-2.5">
+        <div className="hidden md:flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              window.dispatchEvent(new CustomEvent("open-tessimo-ai"));
+            }}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0D9488]/10 hover:bg-[#0D9488]/20 border border-[#0D9488]/25 text-[11px] font-semibold text-[#0D9488] transition-colors cursor-pointer"
+          >
+            <Sparkles className="w-3 h-3 text-[#0D9488]" />
+            <span>Tessimo AI</span>
+          </button>
+
           <Link
             href="#contact"
-            className="text-[12px] font-medium text-[#6E6E73] hover:text-[#1D1D1F] px-3 py-1 transition-colors"
+            className="text-[12px] font-medium text-[#6E6E73] hover:text-[#1D1D1F] px-2.5 py-1 transition-colors"
           >
             Book demo
           </Link>
@@ -153,6 +164,23 @@ export function Navbar() {
               </nav>
 
               <div className="pt-2 flex flex-col gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => {
+                    closeMenu();
+                    window.dispatchEvent(new CustomEvent("open-tessimo-ai"));
+                  }}
+                  className="w-full flex items-center justify-between p-3.5 rounded-2xl bg-[#0D9488]/10 border border-[#0D9488]/20 text-xs font-semibold text-[#0D9488] hover:bg-[#0D9488]/15 transition-colors"
+                >
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-[#0D9488]" />
+                    <span>Launch Tessimo AI Assistant</span>
+                  </div>
+                  <span className="text-[10px] font-mono uppercase bg-white px-2 py-0.5 rounded-full border border-[#0D9488]/20">
+                    Zero-API Core
+                  </span>
+                </button>
+
                 <Link
                   href="#contact"
                   onClick={closeMenu}

@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import { ArrowUpRight, CheckCircle2, AlertCircle, Send, Sparkles } from "lucide-react";
 
-type ServiceType = "Website" | "AI Automation" | "Both" | "Other";
-type TimelineType = "< 4 Weeks" | "1–2 Months" | "Flexible";
-type ScopeType = "<$3,000" | "$3,000–$7,500" | "$7,500+";
+type ServiceType = "Website" | "AI Automation" | "Website + AI" | "Custom Scope";
+type TimelineType = "< 1 Week" | "1–3 Weeks" | "Flexible";
+type ScopeType = "< $500 (Under ₹25k)" | "$500–$1,500 (₹25k–₹75k)" | "$1,500+ / Custom";
 
 interface FormData {
   name: string;
@@ -29,9 +29,9 @@ export function ContactSection() {
     name: "",
     email: "",
     company: "",
-    service: "Both",
-    timeline: "< 4 Weeks",
-    scope: "$3,000–$7,500",
+    service: "Website + AI",
+    timeline: "< 1 Week",
+    scope: "< $500 (Under ₹25k)",
     description: "",
   });
 
@@ -97,9 +97,13 @@ export function ContactSection() {
     }
   };
 
-  const services: ServiceType[] = ["Website", "AI Automation", "Both", "Other"];
-  const timelines: TimelineType[] = ["< 4 Weeks", "1–2 Months", "Flexible"];
-  const scopes: ScopeType[] = ["<$3,000", "$3,000–$7,500", "$7,500+"];
+  const services: ServiceType[] = ["Website", "AI Automation", "Website + AI", "Custom Scope"];
+  const timelines: TimelineType[] = ["< 1 Week", "1–3 Weeks", "Flexible"];
+  const scopes: ScopeType[] = [
+    "< $500 (Under ₹25k)",
+    "$500–$1,500 (₹25k–₹75k)",
+    "$1,500+ / Custom",
+  ];
 
   return (
     <section
@@ -146,9 +150,12 @@ export function ContactSection() {
                 <span className="text-xs font-mono text-[#6E6E73] uppercase tracking-wider block font-semibold">
                   DIRECT INQUIRIES
                 </span>
-                <p className="text-sm font-mono text-[#1D1D1F] font-medium">
-                  hello@tessimo.studio
-                </p>
+                <a
+                  href="mailto:hello@tessimo.in"
+                  className="text-sm font-mono text-[#1D1D1F] font-medium hover:text-[#0D9488] transition-colors"
+                >
+                  hello@tessimo.in
+                </a>
               </div>
 
               <div className="space-y-1">
@@ -162,7 +169,7 @@ export function ContactSection() {
 
               <div className="pt-2 flex items-center gap-2 text-xs font-mono text-[#0D9488] font-semibold">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488] animate-pulse" />
-                <span>RESPONSE PROTOCOL: UNDER 4 BUSINESS HOURS</span>
+                <span>RESPONSE PROTOCOL: UNDER 2 BUSINESS HOURS</span>
               </div>
             </div>
           </div>
@@ -196,9 +203,9 @@ export function ContactSection() {
                         name: "",
                         email: "",
                         company: "",
-                        service: "Both",
-                        timeline: "< 4 Weeks",
-                        scope: "$3,000–$7,500",
+                        service: "Website + AI",
+                        timeline: "< 1 Week",
+                        scope: "< $500 (Under ₹25k)",
                         description: "",
                       });
                     }}
