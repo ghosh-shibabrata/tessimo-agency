@@ -36,47 +36,47 @@ interface BudgetTier {
 const BUDGET_TIERS: BudgetTier[] = [
   {
     id: "starter",
-    title: "Starter Platform",
+    title: "Essential Architecture",
     badge: "5-Day Launch",
     priceINR: "₹4,999",
     priceUSD: "$499",
     timeline: "< 1 Week",
-    subtitle: "High-converting single-page platform",
+    subtitle: "High-converting editorial single-page architecture",
   },
   {
     id: "signature",
-    title: "Signature (Gold)",
-    badge: "Most Selected",
+    title: "Bespoke Digital Flagship",
+    badge: "Recommended",
     priceINR: "₹9,999",
     priceUSD: "$799",
     timeline: "1–2 Weeks",
-    subtitle: "Multi-section custom brand flagship",
+    subtitle: "Multi-page custom brand flagship",
   },
   {
     id: "premium",
-    title: "Premium Architecture",
+    title: "Enterprise Infrastructure",
     badge: "Enterprise",
     priceINR: "₹16,999",
     priceUSD: "$999",
     timeline: "2–3 Weeks",
-    subtitle: "Full custom CMS & conversion funnel",
+    subtitle: "Full custom CMS, payment rails & conversion funnel",
   },
   {
     id: "automation",
-    title: "AI Automation System",
+    title: "Autonomous Systems",
     badge: "24/7 Autopilot",
     priceINR: "From ₹19,999",
     priceUSD: "From $1,499",
     timeline: "1–2 Weeks",
-    subtitle: "WhatsApp bot, CRM & auto booking",
+    subtitle: "Autonomous agent, CRM & auto booking",
   },
   {
     id: "custom",
     title: "Custom Scope",
-    badge: "Tailored",
+    badge: "Bespoke",
     priceINR: "Custom Quote",
     priceUSD: "Custom Quote",
-    timeline: "Flexible",
+    timeline: "Milestone-based",
     subtitle: "Full-scale enterprise architecture",
   },
 ];
@@ -217,19 +217,10 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative w-full bg-[#FBFBFD] py-16 sm:py-24 lg:py-32 overflow-hidden scroll-mt-14"
+      className="relative w-full bg-[#FAF9F5] py-24 sm:py-32 lg:py-40 overflow-hidden scroll-mt-14"
     >
       {/* Structural Hairline */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
-
-      {/* Atmospheric Subtle Jade Halo */}
-      <div
-        className="absolute -bottom-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full pointer-events-none opacity-20"
-        style={{
-          background:
-            "radial-gradient(ellipse 65% 55% at 50% 90%, rgba(13, 148, 136, 0.25) 0%, transparent 70%)",
-        }}
-      />
+      <div className="absolute top-0 inset-x-0 h-px bg-[#E2DFD7]" />
 
       <div className="relative z-10 w-full max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
@@ -240,47 +231,47 @@ export function ContactSection() {
           <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-24">
             
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-black/[0.08] text-xs font-mono font-medium text-[#1D1D1F] tracking-wide shadow-xs">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
-                <span>09 // INITIATE PARTNERSHIP</span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#191919]" />
+                <span>08 // Initiate Partnership</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.035em] text-[#1D1D1F] leading-[1.08] break-words">
-                Ready to grow? <br />
-                <span className="text-[#6E6E73]">Let&apos;s talk business.</span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#191919] leading-[1.12] tracking-tight">
+                Ready to build? <br />
+                <span className="text-[#66635E] italic">Let&apos;s architect your systems.</span>
               </h2>
 
-              <p className="text-sm sm:text-base text-[#6E6E73] font-normal leading-relaxed pt-1">
-                Tell us what you&apos;re looking to build, improve, or automate. We&apos;ll analyze your goals and share a clear roadmap with zero sales pressure.
+              <p className="text-base text-[#66635E] font-sans leading-relaxed pt-1">
+                Tell us what you&apos;re looking to deploy, refine, or automate. We&apos;ll analyze your operational goals and deliver an architectural roadmap.
               </p>
             </div>
 
-            {/* Direct Studio Channels Card */}
-            <div className="p-5 sm:p-6 rounded-2xl bg-white border border-black/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.03)] space-y-4">
+            {/* Direct Technology Channels Card */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#F3F1EB] border border-[#E2DFD7] shadow-[0_2px_12px_rgba(0,0,0,0.02)] space-y-4">
               <div className="space-y-1">
-                <span className="text-[11px] font-mono text-[#6E6E73] uppercase tracking-wider block font-semibold">
-                  DIRECT STUDIO INQUIRIES
+                <span className="text-[11px] font-mono text-[#66635E] uppercase tracking-wider block font-medium">
+                  DIRECT TECHNOLOGY INQUIRIES
                 </span>
                 <a
-                  href="mailto:hello@tessimo.in"
-                  className="text-base font-mono text-[#1D1D1F] font-semibold hover:text-[#0D9488] transition-colors flex items-center gap-1.5"
+                  href="mailto:hello@tessimotechnology.com"
+                  className="text-base font-mono text-[#191919] font-medium hover:underline flex items-center gap-1.5"
                 >
-                  <Mail className="w-4 h-4 text-[#0D9488]" />
-                  <span>hello@tessimo.in</span>
+                  <Mail className="w-4 h-4 text-[#191919]" />
+                  <span>hello@tessimotechnology.com</span>
                 </a>
               </div>
 
-              <div className="pt-2 border-t border-black/[0.06] space-y-1">
-                <span className="text-[11px] font-mono text-[#6E6E73] uppercase tracking-wider block font-semibold">
+              <div className="pt-2 border-t border-[#E2DFD7] space-y-1">
+                <span className="text-[11px] font-mono text-[#66635E] uppercase tracking-wider block font-medium">
                   GLOBAL CLIENT SUPPORT
                 </span>
-                <p className="text-xs font-mono text-[#6E6E73]">
+                <p className="text-xs font-mono text-[#66635E]">
                   Remote Worldwide • Mon—Fri (24/7 Automated Ingestion)
                 </p>
               </div>
 
-              <div className="pt-1 flex items-center gap-2 text-xs font-mono text-[#0D9488] font-semibold">
-                <span className="w-2 h-2 rounded-full bg-[#0D9488] animate-pulse" />
+              <div className="pt-1 flex items-center gap-2 text-xs font-mono text-[#191919] font-medium">
+                <span className="w-2 h-2 rounded-full bg-[#191919]" />
                 <span>RESPONSE PROTOCOL: UNDER 2 BUSINESS HOURS</span>
               </div>
             </div>
@@ -295,7 +286,7 @@ export function ContactSection() {
                   Prefer Instant WhatsApp Chat?
                 </span>
                 <p className="text-xs text-[#6E6E73] leading-relaxed">
-                  Have quick questions about pricing or timelines? Connect with our studio team for immediate assistance.
+                  Have quick questions about pricing or timelines? Connect with our technology team for immediate assistance.
                 </p>
                 <a
                   href="mailto:hello@tessimo.in?subject=WhatsApp%20Inquiry%20for%20Tessimo"

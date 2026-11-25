@@ -54,13 +54,13 @@ export function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-[#F5F5F7] text-[#6E6E73] text-xs font-normal border-t border-black/[0.08] relative overflow-hidden">
+    <footer className="w-full bg-[#FAF9F5] text-[#66635E] text-xs font-normal border-t border-[#E2DFD7] relative overflow-hidden">
       <div className="w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-8">
         
         {/* ==============================================================
             APPLE FOOTNOTES / DISCLAIMERS
            ============================================================== */}
-        <div className="space-y-2 pb-8 border-b border-black/[0.08] text-[11px] leading-relaxed text-[#86868B] font-normal">
+        <div className="space-y-2 pb-8 border-b border-[#E2DFD7] text-[11px] leading-relaxed text-[#66635E] font-normal">
           <p>
             1. Tessimo Intelligence Pipeline simulations and automation benchmarks represent verified multi-stage event flows under standard cloud response latency.
           </p>
@@ -75,16 +75,16 @@ export function Footer() {
         {/* ==============================================================
             APPLE BREADCRUMB / MINI BRAND BAR
            ============================================================== */}
-        <div className="flex items-center gap-3 py-2 text-xs text-[#6E6E73]">
+        <div className="flex items-center gap-3 py-2 text-xs text-[#66635E]">
           <Link
             href="/"
-            className="text-[#1D1D1F] hover:opacity-80 transition-opacity p-0.5"
+            className="text-[#191919] hover:opacity-80 transition-opacity p-0.5"
             aria-label="Tessimo Home"
           >
             <TessimoIcon size={20} variant="teal" />
           </Link>
           <span className="text-black/20">/</span>
-          <span className="text-[#1D1D1F] font-medium">Studio Agency</span>
+          <span className="text-[#191919] font-medium">Tessimo Technology</span>
           <span className="text-black/20">/</span>
           <span>Websites & 24/7 Autonomous Systems</span>
         </div>
@@ -174,7 +174,7 @@ export function Footer() {
             </ul>
 
             <div className="pt-3">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-black/[0.08] text-[10px] font-mono text-[#1D1D1F] shadow-xs">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FAF9F5] border border-[#E2DFD7] text-[10px] font-mono text-[#191919] shadow-xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488] animate-pulse" />
                 SYSTEM 100% OPERATIONAL
               </span>
@@ -186,21 +186,21 @@ export function Footer() {
         {/* ==============================================================
             APPLE BOTTOM COPYRIGHT & LEGAL
            ============================================================== */}
-        <div className="pt-6 border-t border-black/[0.08] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-[#6E6E73]">
+        <div className="pt-6 border-t border-[#E2DFD7] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-[#66635E]">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
             <span>Copyright © {currentYear} Tessimo Agency. All rights reserved.</span>
-            <div className="flex items-center gap-3 text-[#6E6E73]">
-              <Link href="#contact" className="hover:text-[#1D1D1F] transition-colors">Privacy Policy</Link>
+            <div className="flex items-center gap-3 text-[#66635E]">
+              <Link href="#contact" className="hover:text-[#191919] transition-colors">Privacy Policy</Link>
               <span>|</span>
-              <Link href="#contact" className="hover:text-[#1D1D1F] transition-colors">Terms of Service</Link>
+              <Link href="#contact" className="hover:text-[#191919] transition-colors">Terms of Service</Link>
               <span>|</span>
-              <Link href="#pricing" className="hover:text-[#1D1D1F] transition-colors">Pricing & Scope</Link>
+              <Link href="#pricing" className="hover:text-[#191919] transition-colors">Pricing & Scope</Link>
               <span>|</span>
-              <Link href="#services" className="hover:text-[#1D1D1F] transition-colors">Site Map</Link>
+              <Link href="#services" className="hover:text-[#191919] transition-colors">Site Map</Link>
             </div>
           </div>
 
-          <div className="flex items-center gap-1.5 text-[#1D1D1F] hover:text-[#0D9488] cursor-pointer transition-colors font-medium">
+          <div className="flex items-center gap-1.5 text-[#191919] hover:text-[#0D9488] cursor-pointer transition-colors font-medium">
             <Globe className="w-3.5 h-3.5" />
             <span>Worldwide (English)</span>
           </div>

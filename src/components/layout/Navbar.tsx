@@ -47,8 +47,8 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#FBFBFD]/85 backdrop-blur-xl border-b border-black/[0.08] shadow-[0_4px_24px_rgba(0,0,0,0.03)]"
-          : "bg-[#FBFBFD]/60 backdrop-blur-md border-b border-transparent"
+          ? "bg-[#FAF9F5]/90 backdrop-blur-xl border-b border-[#E2DFD7] shadow-[0_4px_24px_rgba(25,25,25,0.02)]"
+          : "bg-[#FAF9F5]/60 backdrop-blur-md border-b border-transparent"
       }`}
     >
       <div className="w-full max-w-[1080px] mx-auto px-4 sm:px-8 h-12 flex items-center justify-between">
@@ -74,7 +74,7 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-[12px] font-normal tracking-[-0.01em] text-[#6E6E73] hover:text-[#1D1D1F] transition-colors duration-150"
+              className="text-[12px] font-normal tracking-[-0.01em] text-[#66635E] hover:text-[#191919] transition-colors duration-150"
             >
               {link.name}
             </Link>
@@ -96,7 +96,7 @@ export function Navbar() {
 
           <Link
             href="#contact"
-            className="text-[12px] font-medium text-[#6E6E73] hover:text-[#1D1D1F] px-2.5 py-1 transition-colors"
+            className="text-[12px] font-medium text-[#66635E] hover:text-[#191919] px-2.5 py-1 transition-colors"
           >
             Book demo
           </Link>
@@ -141,7 +141,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden overflow-hidden border-b border-black/[0.08] bg-[#FBFBFD]/98 backdrop-blur-2xl"
+            className="md:hidden overflow-hidden border-b border-[#E2DFD7] bg-[#FAF9F5]/98 backdrop-blur-2xl"
           >
             <div className="px-6 py-8 flex flex-col gap-6">
               <nav className="flex flex-col gap-1" aria-label="Mobile Navigation">
@@ -155,7 +155,7 @@ export function Navbar() {
                     <Link
                       href={link.href}
                       onClick={closeMenu}
-                      className="flex items-center justify-between py-3 text-lg font-medium tracking-tight text-[#1D1D1F] border-b border-black/[0.05] transition-colors"
+                      className="flex items-center justify-between py-3 text-lg font-medium tracking-tight text-[#191919] border-b border-[#E2DFD7] transition-colors"
                     >
                       <span>{link.name}</span>
                       <ArrowUpRight className="w-4 h-4 text-[#0D9488] opacity-70" />
@@ -177,7 +177,7 @@ export function Navbar() {
                     <TessimoIcon size={18} variant="teal" />
                     <span>Tessimo AI Assistant</span>
                   </div>
-                  <span className="text-[10px] font-mono uppercase bg-white px-2 py-0.5 rounded-full border border-[#0D9488]/20">
+                  <span className="text-[10px] font-mono uppercase bg-[#FAF9F5] px-2 py-0.5 rounded-full border border-[#0D9488]/20">
                     Instant
                   </span>
                 </button>
@@ -201,8 +201,8 @@ export function Navbar() {
                 </Link>
               </div>
 
-              <div className="pt-2 flex items-center justify-between text-[11px] font-mono text-[#86868B]">
-                <span>TESSIMO STUDIO</span>
+              <div className="pt-2 flex items-center justify-between text-[11px] font-mono text-[#66635E]">
+                <span>TESSIMO TECHNOLOGY</span>
                 <span className="text-[#0D9488]">WEBSITES & AUTOMATION</span>
               </div>
             </div>

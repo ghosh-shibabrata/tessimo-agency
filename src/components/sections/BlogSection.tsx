@@ -129,7 +129,7 @@ const ARTICLES: Article[] = [
   {
     id: "5-day-sprint",
     tag: "03 // METHODOLOGY",
-    category: "STUDIO METHODOLOGY",
+    category: "ENGINEERING METHODOLOGY",
     title: "The 5-Day Web Sprint: How We Build High-Converting Platforms Without 3-Month Delays",
     readTime: "3 min read",
     date: "Nov 2026",
@@ -176,36 +176,36 @@ export function BlogSection() {
   return (
     <section
       id="blog"
-      className="relative w-full bg-[#FBFBFD] py-16 sm:py-24 lg:py-32 overflow-hidden scroll-mt-14"
+      className="relative w-full bg-[#FAF9F5] py-24 sm:py-32 lg:py-40 overflow-hidden scroll-mt-14"
     >
       {/* Structural Hairlines */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-[#E2DFD7]" />
 
-      <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+      <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* ==============================================================
             SECTION HEADER
            ============================================================== */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
-          <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-black/[0.08] text-xs font-mono font-medium text-[#1D1D1F] tracking-wide shadow-xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
-              <span>PERSPECTIVES & ENGINEERING NOTES</span>
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-2">
+          <div className="space-y-4 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#191919]" />
+              <span>06 // Perspectives & Notes</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.035em] text-[#1D1D1F] leading-[1.08] break-words">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#191919] leading-[1.12] tracking-tight">
               Actionable insights. <br />
-              <span className="text-[#6E6E73]">Engineered for business momentum.</span>
+              <span className="text-[#66635E] italic">Engineered for enduring momentum.</span>
             </h2>
 
-            <p className="text-sm sm:text-base text-[#6E6E73] font-normal leading-relaxed pt-1">
-              Field notes, conversion telemetry, and architectural blueprints from the frontlines of modern web engineering and autonomous AI systems.
+            <p className="text-base text-[#66635E] font-sans leading-relaxed pt-1">
+              Field observations, conversion telemetry, and architectural blueprints from the frontlines of modern web engineering and autonomous systems.
             </p>
           </div>
 
           <div className="shrink-0">
-            <span className="text-xs font-mono text-[#86868B] uppercase tracking-wider block">
-              Curated by Tessimo Research
+            <span className="text-xs font-mono text-[#66635E] uppercase tracking-wider block font-medium">
+              Curated by Tessimo Technology
             </span>
           </div>
         </div>
@@ -221,40 +221,40 @@ export function BlogSection() {
               <div
                 key={article.id}
                 onClick={() => setActiveArticle(article)}
-                className="apple-card rounded-[24px] sm:rounded-[28px] bg-white border border-black/[0.08] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] hover:border-black/[0.14] cursor-pointer group relative"
+                className="rounded-[24px] sm:rounded-[28px] bg-[#FAF9F5] border border-[#E2DFD7] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:border-[#191919]/40 cursor-pointer group relative"
               >
                 <div className="space-y-4">
                   {/* Category Pill & Read Time */}
                   <div className="flex items-center justify-between gap-2">
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-[10px] font-mono font-semibold text-[#0D9488]">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-[10px] font-mono font-medium text-[#66635E]">
                       <span>{article.tag}</span>
                     </span>
 
-                    <span className="text-[11px] font-mono text-[#86868B] flex items-center gap-1">
-                      <Clock className="w-3 h-3 text-[#86868B]" />
+                    <span className="text-[11px] font-mono text-[#66635E] flex items-center gap-1">
+                      <Clock className="w-3 h-3 text-[#66635E]" />
                       <span>{article.readTime}</span>
                     </span>
                   </div>
 
                   {/* Headline */}
-                  <h3 className="text-base sm:text-lg font-semibold text-[#1D1D1F] tracking-tight leading-snug group-hover:text-[#0D9488] transition-colors">
+                  <h3 className="text-base sm:text-lg font-serif font-medium text-[#191919] tracking-tight leading-snug group-hover:text-[#66635E] transition-colors">
                     {article.title}
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-xs text-[#6E6E73] leading-relaxed line-clamp-3">
+                  <p className="text-xs text-[#66635E] font-sans leading-relaxed line-clamp-3">
                     {article.excerpt}
                   </p>
                 </div>
 
                 {/* Footer Action */}
-                <div className="pt-5 mt-4 border-t border-black/[0.06] flex items-center justify-between">
-                  <span className="text-xs font-medium text-[#1D1D1F] group-hover:text-[#0D9488] transition-colors flex items-center gap-1">
+                <div className="pt-5 mt-4 border-t border-[#E2DFD7] flex items-center justify-between">
+                  <span className="text-xs font-medium text-[#191919] group-hover:underline flex items-center gap-1">
                     <span>Read Article</span>
                     <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </span>
 
-                  <span className="text-[11px] font-mono text-[#86868B]">
+                  <span className="text-[11px] font-mono text-[#66635E]">
                     {article.date}
                   </span>
                 </div>
@@ -309,7 +309,7 @@ export function BlogSection() {
                   </h1>
 
                   <div className="flex items-center justify-between text-xs text-[#86868B] font-mono">
-                    <span>By Shibabrata Ghosh • Tessimo Studio</span>
+                    <span>By Shibabrata Ghosh • Tessimo Technology</span>
                     <span>Published {activeArticle.date}</span>
                   </div>
                 </div>

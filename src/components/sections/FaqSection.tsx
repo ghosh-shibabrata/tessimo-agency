@@ -51,35 +51,35 @@ export function FaqSection() {
   };
 
   return (
-    <section className="relative w-full bg-[#FBFBFD] py-16 sm:py-24 lg:py-32 overflow-hidden">
+    <section className="relative w-full bg-[#FAF9F5] py-24 sm:py-32 lg:py-40 overflow-hidden">
       {/* Structural Hairline */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-[#E2DFD7]" />
 
-      <div className="relative z-10 w-full max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+      <div className="relative z-10 w-full max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* ==============================================================
-            APPLE SECTION HEADER
+            ACADEMIC SECTION HEADER
            ============================================================== */}
-        <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-black/[0.08] text-xs font-medium text-[#1D1D1F] tracking-wide shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
-            <span>08 // COMMON QUESTIONS</span>
+        <div className="space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#191919]" />
+            <span>07 // Common Inquiries</span>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.035em] text-[#1D1D1F] leading-[1.08] break-words">
-              Clear answers. <br />
-              <span className="text-[#6E6E73]">Zero ambiguity.</span>
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-2">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#191919] leading-[1.12] tracking-tight">
+              Direct clarity. <br />
+              <span className="text-[#66635E] italic">Zero ambiguity.</span>
             </h2>
 
-            <p className="text-sm sm:text-base text-[#6E6E73] max-w-md lg:pb-1 font-normal leading-relaxed">
-              Everything you need to know about code ownership, customer data privacy, mobile performance, and launch timelines.
+            <p className="text-base text-[#66635E] max-w-md lg:pb-1 font-sans leading-relaxed">
+              Essential principles governing source code ownership, enterprise data safety, responsive viewports, and production deployment timelines.
             </p>
           </div>
         </div>
 
         {/* ==============================================================
-            APPLE ACCORDION LIST
+            ACCORDION LIST
            ============================================================== */}
         <div className="space-y-3.5">
           {FAQS.map((faq, idx) => {
@@ -88,10 +88,10 @@ export function FaqSection() {
             return (
               <div
                 key={faq.question}
-                className={`apple-card rounded-[20px] sm:rounded-[24px] bg-white border transition-all duration-200 overflow-hidden ${
+                className={`rounded-[20px] sm:rounded-[24px] bg-[#FAF9F5] border transition-all duration-200 overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] ${
                   isOpen
-                    ? "border-[#0D9488]/40 ring-1 ring-[#0D9488]/20 shadow-[0_8px_28px_rgba(13,148,136,0.06)]"
-                    : "border-black/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:border-black/[0.14]"
+                    ? "border-[#191919]"
+                    : "border-[#E2DFD7] hover:border-[#191919]/40"
                 }`}
               >
                 <button
@@ -100,10 +100,10 @@ export function FaqSection() {
                   aria-expanded={isOpen}
                 >
                   <div className="space-y-1.5 pr-2">
-                    <span className="text-[10px] font-mono text-[#0D9488] uppercase tracking-wider block font-semibold">
-                      {faq.category}
+                    <span className="text-[10px] font-mono text-[#66635E] uppercase tracking-wider block font-medium">
+                      {faq.category.toLowerCase().replace(/(^|\s)\S/g, (t) => t.toUpperCase())}
                     </span>
-                    <h3 className="text-base sm:text-lg font-semibold text-[#1D1D1F] tracking-tight leading-snug">
+                    <h3 className="text-base sm:text-lg font-serif font-medium text-[#191919] tracking-tight leading-snug">
                       {faq.question}
                     </h3>
                   </div>
@@ -111,8 +111,8 @@ export function FaqSection() {
                   <div
                     className={`p-2 rounded-full border shrink-0 transition-colors ${
                       isOpen
-                        ? "bg-[#1D1D1F] text-white border-[#1D1D1F]"
-                        : "bg-[#F5F5F7] border-black/[0.08] text-[#1D1D1F]"
+                        ? "bg-[#191919] text-[#FAF9F5] border-[#191919]"
+                        : "bg-[#F3F1EB] border-[#E2DFD7] text-[#191919]"
                     }`}
                   >
                     {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
@@ -127,8 +127,8 @@ export function FaqSection() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
                     >
-                      <div className="px-6 sm:px-7 pb-6 sm:pb-7 pt-1 border-t border-black/[0.06]">
-                        <p className="text-sm sm:text-base text-[#6E6E73] leading-relaxed">
+                      <div className="px-6 sm:px-7 pb-6 sm:pb-7 pt-1 border-t border-[#E2DFD7]">
+                        <p className="text-sm sm:text-base text-[#66635E] font-sans leading-relaxed">
                           {faq.answer}
                         </p>
                       </div>

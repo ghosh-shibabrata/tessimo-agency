@@ -34,79 +34,79 @@ const INVESTMENT_TIERS: InvestmentTier[] = [
   {
     id: "starter",
     tag: "01 // ESSENTIAL",
-    title: "Starter Platform",
+    title: "Essential Architecture",
     priceUSD: "$499",
     priceINR: "₹4,999",
     cadenceUSD: "Fixed investment",
     cadenceINR: "Fixed investment",
     timeline: "3–5 Days Delivery",
-    idealFor: "Emerging businesses and creators requiring a fast, conversion-engineered digital presence.",
+    idealFor: "Emerging practices and boutique operations requiring an editorial, conversion-engineered digital flagship.",
     deliverables: [
-      "1-Page high-converting editorial landing platform",
-      "Mobile-first responsive architecture (sub-second load)",
-      "Instant WhatsApp booking & 1-tap call routing",
-      "Lead intake form with real-time email dispatch",
-      "Structured SEO metadata & Google Business setup",
+      "1-Page high-converting editorial landing architecture",
+      "Mobile-first responsive typographic system (sub-second load)",
+      "Direct consultation routing & calendar integration",
+      "Client intake pipeline with authenticated notification dispatch",
+      "Structured SEO metadata & search indexation",
       "7 Days post-launch verification hypercare",
     ],
-    ctaLabel: "Start with Starter",
+    ctaLabel: "Commission Essential Architecture",
   },
   {
     id: "signature",
-    tag: "02 // SIGNATURE",
-    title: "Signature Experience",
+    tag: "02 // BESPOKE",
+    title: "Bespoke Digital Flagship",
     priceUSD: "$799",
     priceINR: "₹9,999",
     cadenceUSD: "Fixed investment",
     cadenceINR: "Fixed investment",
     timeline: "7–10 Days Delivery",
     featured: true,
-    idealFor: "Growing enterprises seeking a bespoke, multi-page digital platform that commands authority.",
+    idealFor: "Growing enterprises seeking an authoritative multi-page presence with automated qualification.",
     deliverables: [
-      "Up to 5 bespoke pages (Home, About, Services, Work, Contact)",
-      "Next.js 16 fluid compute with sub-second page transitions",
-      "Automated lead qualification & instant routing",
-      "Interactive consultation intake & quote estimation flow",
-      "Schema.org rich snippets & Google search optimization",
+      "Up to 5 bespoke pages (Overview, Practice, Systems, Portfolio, Inquiries)",
+      "Next.js fluid compute with sub-second navigation transitions",
+      "Automated lead qualification & intelligent routing",
+      "Interactive consultation intake & contextual scope estimation",
+      "Schema.org rich snippets & global search indexing",
       "14 Days dedicated production hypercare",
     ],
-    ctaLabel: "Deploy Signature",
+    ctaLabel: "Commission Bespoke Flagship",
   },
   {
     id: "flagship",
-    tag: "03 // FLAGSHIP",
-    title: "Premium Architecture",
+    tag: "03 // ENTERPRISE",
+    title: "Enterprise Infrastructure",
     priceUSD: "$999",
     priceINR: "₹16,999",
     cadenceUSD: "Fixed investment",
     cadenceINR: "Fixed investment",
     timeline: "2–3 Weeks Delivery",
-    idealFor: "Established brands requiring an advanced digital platform with automated booking and payment processing.",
+    idealFor: "Established organizations requiring integrated transaction rails, dynamic content, and automated operations.",
     deliverables: [
       "Up to 10 bespoke platform pages or dynamic CMS architecture",
-      "Automated calendar & video meeting synchronization",
-      "Payment processing gateway integration (Stripe / Razorpay)",
-      "Custom micro-interactions, telemetry & luxury typography",
-      "Comprehensive AEO (AI Engine Optimization) & SEO indexing",
+      "Automated calendar & multi-party video scheduling rails",
+      "Enterprise payment processing rails (Stripe / Razorpay)",
+      "Editorial micro-interactions & telemetry analytics",
+      "Comprehensive AI search optimization (AEO) & schema modeling",
       "30 Days dedicated priority hypercare",
     ],
-    ctaLabel: "Build Premium",
+    ctaLabel: "Commission Enterprise Infrastructure",
   },
   {
     id: "enterprise",
-    tag: "04 // AUTONOMOUS & CUSTOM",
+    tag: "04 // AUTONOMOUS",
     title: "Custom AI & Systems",
     priceUSD: "Custom Quote",
     priceINR: "Custom Quote",
-    cadenceUSD: "AI setup from $1,499 + retainer",
-    cadenceINR: "AI setup from ₹19,999 + retainer",
+    cadenceUSD: "Systems architecture from $1,499",
+    cadenceINR: "Systems architecture from ₹19,999",
     timeline: "Milestone-based",
-    idealFor: "Organizations deploying 24/7 autonomous AI agents, multi-agent workflows, or bespoke web applications.",
+    idealFor: "Organizations deploying 24/7 autonomous agents, operational pipelines, or bespoke web infrastructure.",
     deliverables: [
       "Bespoke scope architecture & technical blueprint",
       "24/7 AI conversational agent for WhatsApp & web (<60s reply)",
       "Bi-directional CRM & calendar synchronization (HubSpot / Sheets)",
-      "Private encrypted vector store & zero AI hallucinations",
+      "Private encrypted vector store & deterministic execution",
       "Dedicated senior engineering squad & priority SLA support",
       "Flexible monthly optimization retainer tailored to your model",
     ],
@@ -134,46 +134,46 @@ export function EngagementModelsSection() {
   return (
     <section
       id="pricing"
-      className="relative w-full bg-[#FBFBFD] py-20 sm:py-28 lg:py-36 overflow-hidden scroll-mt-14"
+      className="relative w-full bg-[#FAF9F5] py-24 sm:py-32 lg:py-40 overflow-hidden scroll-mt-14"
     >
       {/* Structural Hairlines */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-[#E2DFD7]" />
 
-      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 space-y-14 sm:space-y-18">
+      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* ==============================================================
-            APPLE LUXURY SECTION HEADER + REFINED CURRENCY SELECTOR
+            ACADEMIC SECTION HEADER + REFINED CURRENCY SELECTOR
            ============================================================== */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-2">
-          <div className="space-y-4 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-black/[0.08] text-xs font-mono font-medium text-[#1D1D1F] tracking-wide shadow-xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
-              <span>TRANSPARENT INVESTMENT ARCHITECTURE</span>
+          <div className="space-y-5 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#191919]" />
+              <span>Investment Architecture</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.035em] text-[#1D1D1F] leading-[1.08] break-words">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#191919] leading-[1.12] tracking-tight">
               Predictable models. <br />
-              <span className="text-[#6E6E73]">Engineered for business momentum.</span>
+              <span className="text-[#66635E] italic">Engineered for enduring momentum.</span>
             </h2>
 
-            <p className="text-sm sm:text-base text-[#6E6E73] font-normal leading-relaxed max-w-xl">
+            <p className="text-base text-[#66635E] font-sans leading-relaxed max-w-xl">
               Transparent, milestone-based investment frameworks tailored to deliver high conversion, sub-second speed, and autonomous business operations.
             </p>
           </div>
 
-          {/* Minimalist Apple-style Currency Selector (Understated Luxury) */}
+          {/* Minimalist Currency Selector */}
           <div className="shrink-0 flex flex-col sm:items-end gap-2">
-            <span className="text-[11px] font-mono text-[#86868B] uppercase tracking-wider flex items-center gap-1.5 font-medium">
-              <Globe className="w-3.5 h-3.5 text-[#0D9488]" />
-              <span>Display Currency</span>
+            <span className="text-[11px] font-mono text-[#66635E] uppercase tracking-wider flex items-center gap-1.5 font-medium">
+              <Globe className="w-3.5 h-3.5 text-[#191919]" />
+              <span>Display currency</span>
             </span>
 
-            <div className="inline-flex items-center p-1 rounded-full bg-white border border-black/[0.1] shadow-xs relative">
+            <div className="inline-flex items-center p-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] relative">
               <button
                 type="button"
                 onClick={() => setCurrency("USD")}
-                className={`relative z-10 px-4 py-1.5 rounded-full text-xs font-mono font-semibold transition-colors cursor-pointer ${
-                  currency === "USD" ? "text-white" : "text-[#6E6E73] hover:text-[#1D1D1F]"
+                className={`relative z-10 px-4 py-1.5 rounded-full text-xs font-mono font-medium transition-colors cursor-pointer ${
+                  currency === "USD" ? "text-[#FAF9F5]" : "text-[#66635E] hover:text-[#191919]"
                 }`}
                 aria-pressed={currency === "USD"}
               >
@@ -183,8 +183,8 @@ export function EngagementModelsSection() {
               <button
                 type="button"
                 onClick={() => setCurrency("INR")}
-                className={`relative z-10 px-4 py-1.5 rounded-full text-xs font-mono font-semibold transition-colors cursor-pointer ${
-                  currency === "INR" ? "text-white" : "text-[#6E6E73] hover:text-[#1D1D1F]"
+                className={`relative z-10 px-4 py-1.5 rounded-full text-xs font-mono font-medium transition-colors cursor-pointer ${
+                  currency === "INR" ? "text-[#FAF9F5]" : "text-[#66635E] hover:text-[#191919]"
                 }`}
                 aria-pressed={currency === "INR"}
               >
@@ -193,7 +193,7 @@ export function EngagementModelsSection() {
 
               {/* Animated Sliding Pill */}
               <motion.div
-                className="absolute inset-y-1 rounded-full bg-[#1D1D1F] shadow-sm pointer-events-none"
+                className="absolute inset-y-1 rounded-full bg-[#191919] pointer-events-none"
                 initial={false}
                 animate={{
                   left: currency === "USD" ? "4px" : "50%",
@@ -206,7 +206,7 @@ export function EngagementModelsSection() {
         </div>
 
         {/* ==============================================================
-            APPLE 4-COLUMN INVESTMENT CARDS (STARTER, SIGNATURE, FLAGSHIP, CUSTOM)
+            ACADEMIC 4-COLUMN INVESTMENT CARDS
            ============================================================== */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 lg:gap-6 items-stretch">
           {INVESTMENT_TIERS.map((tier) => {
@@ -217,30 +217,30 @@ export function EngagementModelsSection() {
             return (
               <div
                 key={tier.id}
-                className={`apple-card rounded-[24px] sm:rounded-[28px] bg-white border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 relative ${
+                className={`rounded-[24px] sm:rounded-[28px] bg-[#FAF9F5] border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 relative shadow-[0_2px_12px_rgba(0,0,0,0.02)] ${
                   tier.featured
-                    ? "border-[#0D9488]/40 ring-1 ring-[#0D9488]/20 shadow-[0_16px_48px_rgba(13,148,136,0.08)] xl:-translate-y-2"
-                    : "border-black/[0.08] shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] hover:border-black/[0.14]"
+                    ? "border-[#191919] ring-1 ring-[#191919]/20 xl:-translate-y-2 bg-[#FAF9F5]"
+                    : "border-[#E2DFD7] hover:border-[#191919]/40"
                 }`}
               >
                 {/* Featured Badge */}
                 {tier.featured && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#1D1D1F] text-white text-[10px] font-semibold shadow-md tracking-tight whitespace-nowrap">
-                    <Sparkles className="w-3 h-3 text-[#0D9488]" />
-                    <span>STUDIO RECOMMENDED</span>
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-[#191919] text-[#FAF9F5] text-[10px] font-mono tracking-tight whitespace-nowrap">
+                    <Sparkles className="w-3 h-3 text-[#FAF9F5]" />
+                    <span>RECOMMENDED FLAGSHIP</span>
                   </div>
                 )}
 
                 <div className="space-y-5">
                   {/* Header Strip */}
-                  <div className="space-y-2.5 pb-5 border-b border-black/[0.08]">
-                    <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-[11px] font-mono font-semibold text-[#0D9488]">
+                  <div className="space-y-3 pb-5 border-b border-[#E2DFD7]">
+                    <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-[11px] font-mono font-medium text-[#66635E]">
                       <span>{tier.tag}</span>
-                      <span className="text-black/20">•</span>
+                      <span className="text-[#66635E]/40">•</span>
                       <span>{tier.timeline}</span>
                     </div>
 
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#1D1D1F] tracking-tight leading-snug">
+                    <h3 className="text-xl sm:text-2xl font-serif text-[#191919] tracking-tight leading-snug">
                       {tier.title}
                     </h3>
 
@@ -249,31 +249,31 @@ export function EngagementModelsSection() {
                       <AnimatePresence mode="wait">
                         <motion.div
                           key={`${tier.id}-${currency}`}
-                          initial={{ opacity: 0, y: 6 }}
+                          initial={{ opacity: 0, y: 4 }}
                           animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -6 }}
-                          transition={{ duration: 0.2 }}
+                          exit={{ opacity: 0, y: -4 }}
+                          transition={{ duration: 0.15 }}
                         >
                           {isCustom ? (
                             <div>
-                              <span className="text-2xl sm:text-3xl font-semibold text-[#1D1D1F] tracking-tight block">
+                              <span className="text-2xl sm:text-3xl font-serif font-semibold text-[#191919] tracking-tight block">
                                 {currentPrice}
                               </span>
-                              <span className="text-[11px] font-mono text-[#0D9488] font-semibold block mt-0.5">
+                              <span className="text-[11px] font-mono text-[#66635E] block mt-0.5">
                                 {currentCadence}
                               </span>
                             </div>
                           ) : (
                             <div>
                               <div className="flex items-baseline gap-1">
-                                <span className="text-2xl sm:text-3xl font-semibold text-[#1D1D1F] tracking-tight">
+                                <span className="text-2xl sm:text-3xl font-serif font-semibold text-[#191919] tracking-tight">
                                   {currentPrice}
                                 </span>
                                 {currency === "INR" && (
-                                  <span className="text-xs text-[#6E6E73] font-medium">/-</span>
+                                  <span className="text-xs text-[#66635E] font-sans">/-</span>
                                 )}
                               </div>
-                              <span className="text-[11px] font-mono text-[#6E6E73] block mt-0.5">
+                              <span className="text-[11px] font-mono text-[#66635E] block mt-0.5">
                                 {currentCadence}
                               </span>
                             </div>
@@ -284,19 +284,19 @@ export function EngagementModelsSection() {
                   </div>
 
                   {/* Ideal For */}
-                  <p className="text-xs text-[#6E6E73] leading-relaxed min-h-[38px]">
+                  <p className="text-xs text-[#66635E] font-sans leading-relaxed min-h-[38px]">
                     {tier.idealFor}
                   </p>
 
                   {/* Deliverables List */}
                   <div className="space-y-2.5 pt-1">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#6E6E73] block font-semibold">
-                      SCOPE & DELIVERABLES
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#66635E] block font-medium">
+                      Architecture deliverables
                     </span>
                     <ul className="space-y-2">
                       {tier.deliverables.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-xs text-[#1D1D1F] font-medium leading-tight">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#0D9488] shrink-0 mt-0.5" />
+                        <li key={item} className="flex items-start gap-2 text-xs text-[#191919] font-medium leading-tight">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-[#191919] shrink-0 mt-0.5" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -305,13 +305,13 @@ export function EngagementModelsSection() {
                 </div>
 
                 {/* Action Button */}
-                <div className="pt-6 mt-6 border-t border-black/[0.06]">
+                <div className="pt-6 mt-6 border-t border-[#E2DFD7]">
                   <a
                     href="#contact"
-                    className={`w-full h-10 rounded-full text-xs font-semibold tracking-tight transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+                    className={`w-full h-10 rounded-full text-xs font-mono font-medium tracking-tight transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
                       tier.featured
-                        ? "btn-apple-primary"
-                        : "btn-apple-secondary"
+                        ? "bg-[#191919] text-[#FAF9F5] hover:bg-[#191919]/90"
+                        : "bg-[#F3F1EB] text-[#191919] border border-[#E2DFD7] hover:bg-[#EAE7DF]"
                     }`}
                   >
                     <span>{tier.ctaLabel}</span>
@@ -324,13 +324,13 @@ export function EngagementModelsSection() {
         </div>
 
         {/* Global Security & Direct Ownership Guarantee */}
-        <div className="p-4 px-5 sm:px-6 rounded-2xl bg-white border border-black/[0.08] shadow-xs flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-[#6E6E73]">
-          <div className="flex items-center gap-2 text-[#1D1D1F] font-semibold">
-            <ShieldCheck className="w-4 h-4 text-[#0D9488]" />
-            <span>100% Intellectual Property & Code Ownership Guaranteed • Zero Vendor Lock-in</span>
+        <div className="p-4 px-5 sm:px-6 rounded-2xl bg-[#F3F1EB] border border-[#E2DFD7] flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-[#66635E]">
+          <div className="flex items-center gap-2 text-[#191919] font-medium">
+            <ShieldCheck className="w-4 h-4 text-[#191919]" />
+            <span>100% intellectual property & source code ownership • Zero vendor lock-in</span>
           </div>
-          <span className="text-[11px] text-[#86868B]">
-            All engagements include structured delivery milestones and post-launch hypercare.
+          <span className="text-[11px] text-[#66635E]">
+            All commissions include structured delivery milestones and post-launch verification hypercare.
           </span>
         </div>
 

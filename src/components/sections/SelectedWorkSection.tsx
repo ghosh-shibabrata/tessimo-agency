@@ -108,29 +108,29 @@ export function SelectedWorkSection() {
   const IconComponent = activeStudy.icon;
 
   return (
-    <section id="work" className="relative w-full bg-[#FBFBFD] py-16 sm:py-24 lg:py-32 overflow-hidden scroll-mt-14">
+    <section id="work" className="relative w-full bg-[#FAF9F5] py-24 sm:py-32 lg:py-40 overflow-hidden scroll-mt-14">
       {/* Structural Hairline */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-[#E2DFD7]" />
 
-      <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+      <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* ==============================================================
-            APPLE SECTION HEADER
+            ACADEMIC SECTION HEADER
            ============================================================== */}
-        <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-black/[0.08] text-xs font-medium text-[#1D1D1F] tracking-wide shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
-            <span>02 // CLIENT RESULTS & CASE STUDIES</span>
+        <div className="space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#191919]" />
+            <span>03 // Selected Deployments</span>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.035em] text-[#1D1D1F] leading-[1.08] break-words">
-              Real business growth. <br />
-              <span className="text-[#6E6E73]">Proven across industries.</span>
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-2">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#191919] leading-[1.12] tracking-tight">
+              Documented outcomes. <br />
+              <span className="text-[#66635E] italic">Validated across operating disciplines.</span>
             </h2>
 
-            <p className="text-sm sm:text-base text-[#6E6E73] max-w-md lg:pb-1 font-normal leading-relaxed">
-              See how modern websites and automated systems help real business owners increase revenue and save dozens of hours every week.
+            <p className="text-base text-[#66635E] max-w-md lg:pb-1 font-sans leading-relaxed">
+              Examine how modern interfaces paired with autonomous systems capture qualified demand and reclaim operational capacity.
             </p>
           </div>
         </div>
@@ -138,17 +138,17 @@ export function SelectedWorkSection() {
         {/* ==============================================================
             CASE STUDY TABS
            ============================================================== */}
-        <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-full bg-white border border-black/[0.08] max-w-fit shadow-xs">
+        <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] max-w-fit">
           {CASE_STUDIES.map((study) => {
             const isSelected = study.id === selectedId;
             return (
               <button
                 key={study.id}
                 onClick={() => setSelectedId(study.id)}
-                className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
+                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-sans transition-all cursor-pointer ${
                   isSelected
-                    ? "bg-[#1D1D1F] text-white font-semibold shadow-xs"
-                    : "text-[#6E6E73] hover:text-[#1D1D1F]"
+                    ? "bg-[#191919] text-[#FAF9F5] font-medium shadow-xs"
+                    : "text-[#66635E] hover:text-[#191919]"
                 }`}
               >
                 {study.client}
@@ -163,40 +163,40 @@ export function SelectedWorkSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeStudy.id}
-            initial={{ opacity: 0, y: 14 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -14 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="apple-card rounded-[28px] sm:rounded-[36px] bg-white border border-black/[0.08] p-6 sm:p-10 lg:p-12 overflow-hidden relative shadow-[0_4px_24px_rgba(0,0,0,0.03)]"
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="rounded-[28px] sm:rounded-[36px] bg-[#FAF9F5] border border-[#E2DFD7] p-8 sm:p-12 lg:p-14 overflow-hidden relative shadow-[0_2px_12px_rgba(0,0,0,0.02)]"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               
               {/* Left Column: Narrative, Details, Metrics */}
               <div className="lg:col-span-6 space-y-6">
                 <div className="space-y-3">
-                  <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-xs font-mono font-medium text-[#0D9488]">
-                    <span>{activeStudy.tag}</span>
-                    <span className="text-black/20">•</span>
-                    <span>{activeStudy.category}</span>
+                  <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+                    <span>{studyTag(activeStudy.tag)}</span>
+                    <span className="text-[#66635E]/40">•</span>
+                    <span>{studyCategory(activeStudy.category)}</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[-0.03em] text-[#1D1D1F] leading-snug">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-[#191919] leading-snug">
                     {activeStudy.headline}
                   </h3>
                 </div>
 
-                <p className="text-base text-[#6E6E73] leading-relaxed">
+                <p className="text-base text-[#66635E] font-sans leading-relaxed">
                   {activeStudy.summary}
                 </p>
 
                 {/* 3 Impact Metrics */}
-                <div className="grid grid-cols-3 gap-3 pt-3 pb-3 border-y border-black/[0.06]">
+                <div className="grid grid-cols-3 gap-3 pt-3 pb-3 border-y border-[#E2DFD7]">
                   {activeStudy.metrics.map((m) => (
                     <div key={m.label} className="space-y-1">
-                      <span className="text-xl sm:text-2xl font-semibold text-[#1D1D1F] block">
+                      <span className="text-xl sm:text-2xl font-serif font-semibold text-[#191919] block">
                         {m.value}
                       </span>
-                      <span className="text-[11px] text-[#6E6E73] block leading-tight font-medium">
+                      <span className="text-[11px] text-[#66635E] block leading-tight font-sans">
                         {m.label}
                       </span>
                     </div>
@@ -205,16 +205,16 @@ export function SelectedWorkSection() {
 
                 {/* What Was Built */}
                 <div className="space-y-2">
-                  <span className="text-xs font-mono uppercase tracking-wider text-[#86868B]">
-                    Key Deliverables
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#66635E]">
+                    Key architectural deliverables
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {activeStudy.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-xs font-medium text-[#1D1D1F]"
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-medium text-[#191919]"
                       >
-                        <CheckCircle2 className="w-3 h-3 text-[#0D9488]" />
+                        <CheckCircle2 className="w-3 h-3 text-[#191919]" />
                         {tag}
                       </span>
                     ))}
@@ -224,9 +224,9 @@ export function SelectedWorkSection() {
                 <div className="pt-2">
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#0D9488] hover:text-[#0F766E] transition-colors group"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#191919] hover:underline underline-offset-4 transition-colors group"
                   >
-                    Discuss your business goals
+                    Discuss your organizational objectives
                     <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                   </a>
                 </div>
@@ -234,55 +234,55 @@ export function SelectedWorkSection() {
 
               {/* Right Column: Visual Console Preview */}
               <div className="lg:col-span-6">
-                <div className="rounded-2xl sm:rounded-3xl border border-black/[0.08] bg-[#F5F5F7] shadow-[0_12px_36px_rgba(0,0,0,0.06)] p-6 sm:p-8 space-y-5">
+                <div className="rounded-2xl sm:rounded-3xl border border-[#E2DFD7] bg-[#F3F1EB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] p-6 sm:p-8 space-y-5">
                   
                   {/* Top Bar */}
-                  <div className="flex items-center justify-between border-b border-black/[0.06] pb-3">
+                  <div className="flex items-center justify-between border-b border-[#E2DFD7] pb-3">
                     <div className="flex items-center gap-2.5">
-                      <div className="w-8 h-8 rounded-xl bg-[#0D9488]/10 flex items-center justify-center text-[#0D9488]">
+                      <div className="w-8 h-8 rounded-xl bg-[#FAF9F5] border border-[#E2DFD7] flex items-center justify-center text-[#191919]">
                         <IconComponent className="w-4 h-4" />
                       </div>
                       <div>
-                        <span className="text-xs font-semibold text-[#1D1D1F] block">
+                        <span className="text-xs font-serif font-semibold text-[#191919] block">
                           {activeStudy.previewDetails.title}
                         </span>
-                        <span className="text-[10px] font-mono text-[#6E6E73] block">
+                        <span className="text-[10px] font-mono text-[#66635E] block">
                           {activeStudy.previewDetails.sub}
                         </span>
                       </div>
                     </div>
-                    <span className="text-[10px] font-mono text-[#0D9488] bg-[#0D9488]/10 px-2.5 py-0.5 rounded-full font-semibold">
+                    <span className="text-[10px] font-mono text-[#66635E] bg-[#FAF9F5] px-2.5 py-0.5 rounded-full border border-[#E2DFD7] font-medium">
                       ACTIVE
                     </span>
                   </div>
 
                   {/* Stats Box */}
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="p-4 rounded-2xl bg-white border border-black/[0.05] space-y-1 shadow-2xs">
-                      <span className="text-[10px] font-mono text-[#6E6E73] block">
+                    <div className="p-4 rounded-xl bg-[#FAF9F5] border border-[#E2DFD7] space-y-1">
+                      <span className="text-[10px] font-mono text-[#66635E] block">
                         {activeStudy.previewDetails.statA.label}
                       </span>
-                      <span className="text-xl font-semibold text-[#0D9488]">
+                      <span className="text-xl font-serif font-semibold text-[#191919]">
                         {activeStudy.previewDetails.statA.val}
                       </span>
                     </div>
 
-                    <div className="p-4 rounded-2xl bg-white border border-black/[0.05] space-y-1 shadow-2xs">
-                      <span className="text-[10px] font-mono text-[#6E6E73] block">
+                    <div className="p-4 rounded-xl bg-[#FAF9F5] border border-[#E2DFD7] space-y-1">
+                      <span className="text-[10px] font-mono text-[#66635E] block">
                         {activeStudy.previewDetails.statB.label}
                       </span>
-                      <span className="text-xl font-semibold text-[#1D1D1F]">
+                      <span className="text-xl font-serif font-semibold text-[#191919]">
                         {activeStudy.previewDetails.statB.val}
                       </span>
                     </div>
                   </div>
 
                   {/* Benefit Callout */}
-                  <div className="p-4 rounded-2xl bg-white border border-black/[0.06] space-y-1 text-xs shadow-2xs">
-                    <span className="text-[10px] font-mono text-[#0D9488] font-semibold block">
+                  <div className="p-4 rounded-xl bg-[#FAF9F5] border border-[#E2DFD7] space-y-1 text-xs">
+                    <span className="text-[10px] font-mono text-[#191919] font-medium block">
                       {activeStudy.previewDetails.highlight}
                     </span>
-                    <p className="text-[#6E6E73] text-xs leading-relaxed">
+                    <p className="text-[#66635E] text-xs font-sans leading-relaxed">
                       Captured qualified leads, handled inquiries automatically, and scheduled consultations with zero staff intervention.
                     </p>
                   </div>
@@ -297,4 +297,12 @@ export function SelectedWorkSection() {
       </div>
     </section>
   );
+}
+
+function studyTag(tag: string): string {
+  return tag.replace("LOGISTICS & FLEET", "Logistics & Fleet").replace("HEALTHCARE & CLINIC", "Healthcare & Clinic").replace("PROFESSIONAL SERVICES", "Professional Services");
+}
+
+function studyCategory(cat: string): string {
+  return cat.toLowerCase().replace(/(^|\s)\S/g, (t) => t.toUpperCase());
 }

@@ -69,66 +69,66 @@ export function CapabilitiesSection() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   return (
-    <section className="relative w-full bg-[#FBFBFD] py-16 sm:py-24 lg:py-32 overflow-hidden">
+    <section className="relative w-full bg-[#FAF9F5] py-24 sm:py-32 lg:py-40 overflow-hidden">
       {/* Structural Hairline */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-[#E2DFD7]" />
 
-      <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+      <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         
         {/* ==============================================================
-            APPLE SECTION HEADER
+            ACADEMIC SECTION HEADER
            ============================================================== */}
-        <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-black/[0.08] text-xs font-medium text-[#1D1D1F] tracking-wide shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
-            <span>05 // CAPABILITY MATRIX</span>
+        <div className="space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#191919]" />
+            <span>04 // Capability Matrix</span>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.035em] text-[#1D1D1F] leading-[1.08] break-words">
-              Thoughtfully designed. <br />
-              <span className="text-[#6E6E73]">Intelligently automated.</span>
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-2">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#191919] leading-[1.12] tracking-tight">
+              Thoughtfully engineered. <br />
+              <span className="text-[#66635E] italic">Autonomously orchestrated.</span>
             </h2>
 
-            <p className="text-sm sm:text-base text-[#6E6E73] max-w-md lg:pb-1 font-normal leading-relaxed">
-              Every feature we build is focused on one outcome: giving your business an unfair advantage in speed, conversion, and operational freedom.
+            <p className="text-base text-[#66635E] max-w-md lg:pb-1 font-sans leading-relaxed">
+              Every system we deploy is calibrated toward one standard: establishing lasting authority, sub-second speed, and operational freedom.
             </p>
           </div>
         </div>
 
-        {/* Apple Capsule Status HUD */}
-        <div className="px-5 py-3 rounded-full bg-white border border-black/[0.08] shadow-xs flex items-center justify-between transition-all">
+        {/* Status Capsule */}
+        <div className="px-5 py-3 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] flex items-center justify-between transition-all">
           <div className="flex items-center gap-3">
-            <span className="w-2 h-2 rounded-full bg-[#0D9488] animate-pulse" />
-            <span className="text-xs font-mono text-[#1D1D1F] tracking-wide">
-              {hoveredItem ? `CAPABILITY ACTIVE: ${hoveredItem} // READY TO DEPLOY` : "EXPLORE OUR TAILORED BUSINESS CAPABILITIES"}
+            <span className="w-2 h-2 rounded-full bg-[#191919]" />
+            <span className="text-xs font-mono text-[#191919] tracking-wide">
+              {hoveredItem ? `CAPABILITY ACTIVE: ${hoveredItem} // VERIFIED` : "EXPLORE ARCHITECTURAL CAPABILITIES"}
             </span>
           </div>
-          <span className="text-[10px] font-mono text-[#0D9488] bg-[#0D9488]/10 px-3 py-0.5 rounded-full border border-[#0D9488]/20 hidden sm:inline-block font-semibold">
-            TESSIMO ENTERPRISE
+          <span className="text-[10px] font-mono text-[#66635E] bg-[#FAF9F5] px-3 py-0.5 rounded-full border border-[#E2DFD7] hidden sm:inline-block font-medium">
+            TESSIMO TECHNOLOGY
           </span>
         </div>
 
         {/* ==============================================================
-            APPLE TECH SPEC CARDS: DIGITAL & INTELLIGENCE
+            TECH SPEC CARDS: DIGITAL & INTELLIGENCE
            ============================================================== */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           
           {/* CATEGORY 1: DIGITAL */}
-          <div className="apple-card rounded-[28px] sm:rounded-[36px] bg-white border border-black/[0.08] p-8 sm:p-10 space-y-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] transition-all">
-            <div className="space-y-3 pb-5 border-b border-black/[0.08]">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-xs font-mono font-semibold text-[#0D9488]">
-                <span>CATEGORY 01</span>
-                <span className="text-black/20">•</span>
-                <span>CUSTOMER-WINNING PLATFORMS</span>
+          <div className="rounded-[28px] sm:rounded-[36px] bg-[#FAF9F5] border border-[#E2DFD7] p-8 sm:p-10 space-y-8 shadow-[0_2px_12px_rgba(0,0,0,0.02)] transition-all">
+            <div className="space-y-3 pb-5 border-b border-[#E2DFD7]">
+              <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+                <span>Category 01</span>
+                <span className="text-[#66635E]/40">•</span>
+                <span>Visual & Conversational Platforms</span>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-semibold text-[#1D1D1F] tracking-tight">
-                Digital Experiences
+              <h3 className="text-2xl sm:text-3xl font-serif text-[#191919] tracking-tight">
+                Digital Interfaces
               </h3>
             </div>
 
             {/* Spec Rows */}
-            <div className="divide-y divide-black/[0.06]">
+            <div className="divide-y divide-[#E2DFD7]">
               {DIGITAL_CAPABILITIES.map((item) => (
                 <div
                   key={item.id}
@@ -138,16 +138,16 @@ export function CapabilitiesSection() {
                 >
                   <div className="flex items-baseline justify-between gap-4">
                     <div className="flex items-baseline gap-3">
-                      <span className="text-xs font-mono text-[#0D9488] font-semibold">
+                      <span className="text-xs font-mono text-[#66635E] font-medium">
                         {item.id}
                       </span>
-                      <h4 className="text-base sm:text-lg font-semibold text-[#1D1D1F] group-hover:text-[#0D9488] transition-colors tracking-tight">
+                      <h4 className="text-base sm:text-lg font-serif font-medium text-[#191919] group-hover:text-[#66635E] transition-colors tracking-tight">
                         {item.name}
                       </h4>
                     </div>
-                    <ArrowUpRight className="w-4 h-4 text-[#0D9488] opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                    <ArrowUpRight className="w-4 h-4 text-[#191919] opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
                   </div>
-                  <p className="mt-1.5 pl-7 text-xs sm:text-sm text-[#6E6E73] leading-relaxed">
+                  <p className="mt-1.5 pl-7 text-xs sm:text-sm text-[#66635E] font-sans leading-relaxed">
                     {item.detail}
                   </p>
                 </div>
@@ -156,20 +156,20 @@ export function CapabilitiesSection() {
           </div>
 
           {/* CATEGORY 2: INTELLIGENCE */}
-          <div className="apple-card rounded-[28px] sm:rounded-[36px] bg-white border border-black/[0.08] p-8 sm:p-10 space-y-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.06)] transition-all">
-            <div className="space-y-3 pb-5 border-b border-black/[0.08]">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-xs font-mono font-semibold text-[#0D9488]">
-                <span>CATEGORY 02</span>
-                <span className="text-black/20">•</span>
-                <span>24/7 AUTONOMOUS SYSTEMS</span>
+          <div className="rounded-[28px] sm:rounded-[36px] bg-[#FAF9F5] border border-[#E2DFD7] p-8 sm:p-10 space-y-8 shadow-[0_2px_12px_rgba(0,0,0,0.02)] transition-all">
+            <div className="space-y-3 pb-5 border-b border-[#E2DFD7]">
+              <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#66635E]">
+                <span>Category 02</span>
+                <span className="text-[#66635E]/40">•</span>
+                <span>Autonomous Operational Systems</span>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-semibold text-[#1D1D1F] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-serif text-[#191919] tracking-tight">
                 Intelligent Automation
               </h3>
             </div>
 
             {/* Spec Rows */}
-            <div className="divide-y divide-black/[0.06]">
+            <div className="divide-y divide-[#E2DFD7]">
               {INTELLIGENCE_CAPABILITIES.map((item) => (
                 <div
                   key={item.id}
@@ -179,16 +179,16 @@ export function CapabilitiesSection() {
                 >
                   <div className="flex items-baseline justify-between gap-4">
                     <div className="flex items-baseline gap-3">
-                      <span className="text-xs font-mono text-[#0D9488] font-semibold">
+                      <span className="text-xs font-mono text-[#66635E] font-medium">
                         {item.id}
                       </span>
-                      <h4 className="text-base sm:text-lg font-semibold text-[#1D1D1F] group-hover:text-[#0D9488] transition-colors tracking-tight">
+                      <h4 className="text-base sm:text-lg font-serif font-medium text-[#191919] group-hover:text-[#66635E] transition-colors tracking-tight">
                         {item.name}
                       </h4>
                     </div>
-                    <ArrowUpRight className="w-4 h-4 text-[#0D9488] opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                    <ArrowUpRight className="w-4 h-4 text-[#191919] opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
                   </div>
-                  <p className="mt-1.5 pl-7 text-xs sm:text-sm text-[#6E6E73] leading-relaxed">
+                  <p className="mt-1.5 pl-7 text-xs sm:text-sm text-[#66635E] font-sans leading-relaxed">
                     {item.detail}
                   </p>
                 </div>

@@ -134,8 +134,7 @@ export function processTessimoAIQuery(
     return {
       id: "founder-profile",
       intent: "FOUNDER",
-      text: `### Shibabrata Ghosh — Founder & Lead Technologist\n\nTessimo was founded and is directed by **Shibabrata Ghosh**.\n\n• **Role**: Founder & Lead Creative Technologist\n• **Direct Oversight**: Shibabrata personally architects and reviews all client platforms with zero junior handoffs.\n• **LinkedIn**: [linkedin.com/in/shibabrata-ghosh](https://www.linkedin.com/in/shibabrata-ghosh/)\n• **GitHub**: [github.com/ghosh-shibabrata](https://github.com/ghosh-shibabrata)\n• **Direct Founder Email**: [shibabrata@tessimo.in](mailto:shibabrata@tessimo.in)
-• **Studio Inquiries**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nShibabrata guarantees our under 2-hour executive response protocol and 100% intellectual property ownership.`,
+      text: `### Shibabrata Ghosh — Founder & Lead Technologist\n\nTessimo Technology was founded and is directed by **Shibabrata Ghosh**.\n\n• **Role**: Founder & Lead Creative Technologist\n• **Direct Oversight**: Shibabrata personally architects and reviews all client platforms with zero junior handoffs.\n• **LinkedIn**: [linkedin.com/in/shibabrata-ghosh](https://www.linkedin.com/in/shibabrata-ghosh/)\n• **GitHub**: [github.com/ghosh-shibabrata](https://github.com/ghosh-shibabrata)\n• **Direct Founder Email**: [shibabrata@tessimotechnology.com](mailto:shibabrata@tessimotechnology.com)\n• **General Inquiries**: [hello@tessimotechnology.com](mailto:hello@tessimotechnology.com)\n\nShibabrata guarantees our under 2-hour executive response protocol and 100% intellectual property ownership.`,
       suggestedPills: [
         "View Founder Section",
         "Website Pricing",
@@ -155,21 +154,21 @@ export function processTessimoAIQuery(
     return {
       id: "starter-tier",
       intent: "STARTER_TIER",
-      text: `### Starter Platform — ${isINR ? "₹4,999" : "$499"}\n\nOur fastest route to high-conversion market authority. Engineered for startups, creators, and new ventures.\n\n• **Turnaround**: < 1 Week (3–5 business days)\n• **Included**: Bespoke single-page landing architecture, mobile-first responsive design, lead capture form with instant alerts, and 14-day warranty.\n• **Ideal For**: Quick launches where speed and sub-second load times are paramount.`,
+      text: `### Essential Architecture — ${isINR ? "₹4,999" : "$499"}\n\nOur fastest route to high-conversion market authority. Engineered for boutique practices, creators, and new ventures.\n\n• **Turnaround**: < 1 Week (3–5 business days)\n• **Included**: Bespoke single-page landing architecture, mobile-first responsive design, lead capture form with instant alerts, and 7-day post-launch hypercare.\n• **Ideal For**: Quick launches where speed and sub-second load times are paramount.`,
       highlightCard: {
-        title: "Starter Platform",
+        title: "Essential Architecture",
         badge: "Rapid 5-Day Launch",
         price: isINR ? "₹4,999" : "$499",
         subtext: "One-time investment",
         features: tier.features.slice(0, 4),
       },
       suggestedPills: [
-        "What is Gold tier?",
+        "What is Bespoke Flagship?",
         "How about AI Automation?",
-        "Start Starter Project",
+        "Start Essential Architecture",
       ],
       action: {
-        label: "Start with Starter Tier",
+        label: "Select Essential Architecture",
         type: "scroll",
         value: "#contact",
       },
@@ -182,21 +181,21 @@ export function processTessimoAIQuery(
     return {
       id: "gold-tier",
       intent: "GOLD_TIER",
-      text: `### Signature (Gold) Experience — ${isINR ? "₹9,999" : "$799"}\n\nOur most popular, comprehensive brand flagship designed to command elevated market positioning and conversion authority.\n\n• **Turnaround**: 1–2 Weeks\n• **Included**: Multi-section bespoke layout, Apple-grade fluid animations, embedded live appointment booking calendar, technical SEO & Google Analytics.\n• **Warranty**: 30-day post-launch optimization warranty.`,
+      text: `### Bespoke Digital Flagship — ${isINR ? "₹9,999" : "$799"}\n\nOur most popular, comprehensive brand flagship designed to command elevated market positioning and conversion authority.\n\n• **Turnaround**: 1–2 Weeks (7–10 business days)\n• **Included**: Multi-section bespoke layout, quiet editorial micro-interactions, embedded live appointment booking calendar, technical SEO & Google Analytics.\n• **Warranty**: 14-day dedicated production hypercare.`,
       highlightCard: {
-        title: "Signature (Gold)",
-        badge: "Most Selected",
+        title: "Bespoke Digital Flagship",
+        badge: "Recommended Flagship",
         price: isINR ? "₹9,999" : "$799",
         subtext: "One-time investment",
         features: tier.features.slice(0, 4),
       },
       suggestedPills: [
-        "Compare with Premium",
+        "Compare with Enterprise",
         "Add AI Automation",
         "Book a 15-min Demo",
       ],
       action: {
-        label: "Select Signature Experience",
+        label: "Select Bespoke Flagship",
         type: "scroll",
         value: "#contact",
       },
@@ -209,10 +208,10 @@ export function processTessimoAIQuery(
     return {
       id: "premium-tier",
       intent: "PREMIUM_TIER",
-      text: `### Premium Architecture — ${isINR ? "₹16,999" : "$999"}\n\nUncompromising digital platform architecture with custom animations, database integration, and high-performance conversion funnels.\n\n• **Turnaround**: 2–3 Weeks\n• **Included**: Bespoke UI component library, dynamic Supabase/headless CMS, webhook lead ingestion, 95+ Google Lighthouse guarantee.\n• **Warranty**: 60-day priority support with dedicated live code handoff.`,
+      text: `### Enterprise Infrastructure — ${isINR ? "₹16,999" : "$999"}\n\nUncompromising digital platform architecture with custom animations, database integration, and high-performance conversion funnels.\n\n• **Turnaround**: 2–3 Weeks\n• **Included**: Bespoke UI component library, dynamic Supabase/headless CMS, payment rails, webhook lead ingestion, 95+ Google Lighthouse guarantee.\n• **Warranty**: 30-day dedicated priority hypercare.`,
       highlightCard: {
-        title: "Premium Architecture",
-        badge: "Flagship Quality",
+        title: "Enterprise Infrastructure",
+        badge: "Enterprise Grade",
         price: isINR ? "₹16,999" : "$999",
         subtext: "One-time investment",
         features: tier.features.slice(0, 4),
@@ -220,10 +219,10 @@ export function processTessimoAIQuery(
       suggestedPills: [
         "Include AI Automation",
         "Custom Enterprise Scope",
-        "Start Premium Project",
+        "Start Enterprise Project",
       ],
       action: {
-        label: "Start Premium Project",
+        label: "Select Enterprise Infrastructure",
         type: "scroll",
         value: "#contact",
       },
@@ -236,10 +235,10 @@ export function processTessimoAIQuery(
     return {
       id: "automation-pricing",
       intent: "AUTOMATION_PRICING",
-      text: `### AI Automation & Systems Investment\n\n• **One-Time Setup**: Starts at **${isINR ? "₹19,999" : "$1,499"}**\n• **Monthly Retainer**: Tailored specifically as per your business automation model, monthly agent throughput, and integration scope.\n\n**What is included:**\n1. **24/7 AI Customer Support**: Autonomous web agent that qualifies leads 24/7.\n2. **Instant WhatsApp AI**: Automatic product guidance & 0-delay chat replies.\n3. **Appointment Scheduling**: Auto-calendar qualification via Cal.com / Google Calendar.\n4. **CRM Sync**: Direct live pipeline updates to Airtable, HubSpot, or Google Sheets.\n5. **Health Telemetry**: Ongoing model tuning and monthly performance monitoring.`,
+      text: `### Autonomous Systems Investment\n\n• **One-Time Architecture**: Starts at **${isINR ? "₹19,999" : "$1,499"}**\n• **Monthly Retainer**: Tailored specifically as per your business automation model, monthly agent throughput, and integration scope.\n\n**What is included:**\n1. **24/7 AI Concierge**: Autonomous web agent that qualifies leads 24/7.\n2. **Instant WhatsApp AI**: Automatic service guidance & 0-delay chat replies.\n3. **Appointment Scheduling**: Auto-calendar qualification via Cal.com / Google Calendar.\n4. **CRM Sync**: Direct live pipeline updates to Airtable, HubSpot, or Google Sheets.\n5. **Health Telemetry**: Ongoing model tuning and monthly performance monitoring.`,
       highlightCard: {
-        title: "AI Automation System",
-        badge: "Never Miss A Lead",
+        title: "Autonomous Systems",
+        badge: "Active Autonomous Flow",
         price: isINR ? "From ₹19,999" : "From $1,499",
         subtext: "One-time setup + tailored retainer",
         features: [
@@ -268,7 +267,7 @@ export function processTessimoAIQuery(
       return {
         id: "pricing-overview-inr",
         intent: "PRICING_INR",
-        text: `### Tessimo Transparent Investment (India Tiers)\n\n**1. High-Converting Websites (One-time):**\n• **Starter Platform**: ₹4,999 *(< 1 Week delivery)*\n• **Signature (Gold)**: ₹9,999 *(1–2 Weeks delivery, interactive animations)*\n• **Premium Architecture**: ₹16,999 *(2–3 Weeks delivery, custom CMS)*\n• **Custom Solution**: Custom Quote *(Enterprise requirements)*\n\n**2. 24/7 AI Automation Systems:**\n• **Setup**: Starts at **₹19,999** one-time setup\n• **Monthly Retainer**: Tailored according to your automation model & message volume.\n\n*All packages include 100% intellectual property ownership and direct post-launch warranty.*`,
+        text: `### Tessimo Technology Investment Architecture (India Tiers)\n\n**1. High-Converting Digital Platforms (One-time):**\n• **Essential Architecture**: ₹4,999 *(< 1 Week delivery)*\n• **Bespoke Digital Flagship**: ₹9,999 *(1–2 Weeks delivery, quiet editorial interactions)*\n• **Enterprise Infrastructure**: ₹16,999 *(2–3 Weeks delivery, payment rails & dynamic CMS)*\n• **Custom Solution**: Custom Quote *(Complex enterprise requirements)*\n\n**2. Autonomous Systems:**\n• **Architecture**: Starts at **₹19,999** one-time setup\n• **Monthly Retainer**: Tailored according to your operational model & message volume.\n\n*All commissions include 100% intellectual property ownership and direct post-launch hypercare.*`,
         suggestedPills: [
           "Show International ($ USD)",
           "AI Automation Details",
@@ -285,7 +284,7 @@ export function processTessimoAIQuery(
       return {
         id: "pricing-overview-usd",
         intent: "PRICING_USD",
-        text: `### Tessimo Transparent Investment (International Tiers)\n\n**1. High-Converting Websites (One-time):**\n• **Starter Platform**: $499 *(< 1 Week delivery)*\n• **Signature (Gold)**: $799 *(1–2 Weeks delivery, Apple-grade interactions)*\n• **Premium Architecture**: $999 *(2–3 Weeks delivery, bespoke CMS)*\n• **Custom Solution**: Custom Quote *(Full enterprise platforms)*\n\n**2. 24/7 AI Automation Systems:**\n• **Setup**: Starts at **$1,499** one-time setup\n• **Monthly Retainer**: Scoped as per automation throughput & agent models.\n\n*All packages include 100% full IP code ownership and sub-second global CDN performance.*`,
+        text: `### Tessimo Technology Investment Architecture (International Tiers)\n\n**1. High-Converting Digital Platforms (One-time):**\n• **Essential Architecture**: $499 *(< 1 Week delivery)*\n• **Bespoke Digital Flagship**: $799 *(1–2 Weeks delivery, quiet editorial interactions)*\n• **Enterprise Infrastructure**: $999 *(2–3 Weeks delivery, bespoke CMS & payment rails)*\n• **Custom Solution**: Custom Quote *(Full enterprise platforms)*\n\n**2. Autonomous Systems:**\n• **Architecture**: Starts at **$1,499** one-time setup\n• **Monthly Retainer**: Scoped as per automation throughput & agent models.\n\n*All commissions include 100% full IP code ownership and sub-second global CDN performance.*`,
         suggestedPills: [
           "Show India Pricing (₹ INR)",
           "AI Automation Details",
@@ -325,9 +324,9 @@ export function processTessimoAIQuery(
     return {
       id: "timelines",
       intent: "TIMELINE",
-      text: `### Delivery & Turnaround Schedules\n\nWe operate with strict milestone velocity:\n\n• **Starter Website Platform**: **< 1 Week** *(3 to 5 Business Days)*\n• **Signature (Gold) Website**: **1 to 2 Weeks**\n• **Premium Architecture**: **2 to 3 Weeks**\n• **AI Automation Pipeline**: **1 to 2 Weeks** *(includes testing & verification)*\n• **Custom Enterprise Systems**: Milestone-aligned schedule established on discovery call.\n\nEvery project includes regular staging previews so you see progress in real time.`,
+      text: `### Delivery & Turnaround Schedules\n\nWe operate with strict milestone velocity:\n\n• **Essential Architecture**: **< 1 Week** *(3 to 5 Business Days)*\n• **Bespoke Digital Flagship**: **1 to 2 Weeks** *(7 to 10 Business Days)*\n• **Enterprise Infrastructure**: **2 to 3 Weeks**\n• **Autonomous Pipeline**: **1 to 2 Weeks** *(includes testing & verification)*\n• **Custom Enterprise Systems**: Milestone-aligned schedule established on discovery call.\n\nEvery project includes regular staging previews so you see progress in real time.`,
       suggestedPills: [
-        "Starter Website details",
+        "Essential Architecture details",
         "Website + AI timeline",
         "Start a Project",
       ],
@@ -344,16 +343,16 @@ export function processTessimoAIQuery(
     return {
       id: "contact-channels",
       intent: "CONTACT",
-      text: `### Studio Inquiries & Global Support\n\n• **Direct Studio Email**: [hello@tessimo.in](mailto:hello@tessimo.in)\n• **Response Protocol**: **UNDER 2 BUSINESS HOURS GUARANTEED**\n• **Global Client Support**: Remote Worldwide • Mon—Fri (24/7 Automated Ingestion)\n• **Discovery Consultation**: 15-Minute Zero-Pressure Strategy Call\n\nYou can fill our project intake form on this page or email us directly at **hello@tessimo.in**.`,
+      text: `### Technology Inquiries & Global Support\n\n• **Direct Email**: [hello@tessimotechnology.com](mailto:hello@tessimotechnology.com)\n• **Response Protocol**: **UNDER 2 BUSINESS HOURS GUARANTEED**\n• **Global Client Support**: Remote Worldwide • Mon—Fri (24/7 Automated Ingestion)\n• **Discovery Consultation**: 15-Minute Zero-Pressure Strategy Call\n\nYou can fill our project intake form on this page or email us directly at **hello@tessimotechnology.com**.`,
       suggestedPills: [
         "Jump to Contact Form",
         "Check Pricing Plans",
         "Book a 15-min Demo",
       ],
       action: {
-        label: "Email hello@tessimo.in",
+        label: "Email hello@tessimotechnology.com",
         type: "email",
-        value: "mailto:hello@tessimo.in",
+        value: "mailto:hello@tessimotechnology.com",
       },
     };
   }
@@ -363,7 +362,7 @@ export function processTessimoAIQuery(
     return {
       id: "book-demo",
       intent: "DEMO",
-      text: `### 15-Minute Strategy & Discovery Consultation\n\nIn this focused 15-minute session, we will:\n1. Audit your current website and conversion bottlenecks.\n2. Review repetitive manual workflows that can be automated.\n3. Recommend the exact tier or automation system tailored to your budget (${isINR ? "INR ₹" : "USD $"}).\n4. Provide a transparent timeline with zero sales pressure.\n\nSubmit your details via the form below or email us at **hello@tessimo.in**.`,
+      text: `### 15-Minute Strategy & Discovery Consultation\n\nIn this focused 15-minute session, we will:\n1. Audit your current website and conversion bottlenecks.\n2. Review repetitive manual workflows that can be automated.\n3. Recommend the exact tier or automation system tailored to your budget (${isINR ? "INR ₹" : "USD $"}).\n4. Provide a transparent timeline with zero sales pressure.\n\nSubmit your details via the form below or email us at **hello@tessimotechnology.com**.`,
       suggestedPills: [
         "Fill Contact Form",
         "Review Website Tiers",
@@ -459,7 +458,7 @@ export function processTessimoAIQuery(
     id: "fallback",
     intent: "GENERAL_KNOWLEDGE",
     text: `I understand you are inquiring about Tessimo Agency.\n\nAt Tessimo, we build **high-converting bespoke websites** and **24/7 autonomous AI systems** so your business never misses a lead or loses a customer.\n\n• **Website Platforms**: ${isINR ? "₹4,999 (Starter) / ₹9,999 (Gold) / ₹16,999 (Premium)" : "$499 (Starter) / $799 (Gold) / $999 (Premium)"}\n• **AI Automation**: Setup starts at ${isINR ? "₹19,999" : "$1,499"} + tailored retainer\n• **Response Guarantee**: Under 2 business hours\n• **Direct Founder Email**: [shibabrata@tessimo.in](mailto:shibabrata@tessimo.in)
-• **Studio Inquiries**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nWhich area would you like to explore?`,
+• **General Inquiries**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nWhich area would you like to explore?`,
     suggestedPills: [
       "Website Pricing",
       "AI Automation Plans",

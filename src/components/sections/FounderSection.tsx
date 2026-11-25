@@ -36,23 +36,23 @@ export function FounderSection() {
   return (
     <section
       id="founder"
-      className="relative w-full bg-[#FBFBFD] py-12 sm:py-16 lg:py-20 overflow-hidden scroll-mt-14"
+      className="relative w-full bg-[#FAF9F5] py-12 sm:py-16 lg:py-20 overflow-hidden scroll-mt-14"
     >
       {/* Structural Hairlines */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/[0.08] to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E2DFD7] to-transparent" />
 
       <div className="relative z-10 w-full max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* ==============================================================
             COMPACT APPLE EXECUTIVE FOUNDER CARD
            ============================================================== */}
-        <div className="apple-card rounded-[28px] sm:rounded-[36px] bg-white border border-black/[0.08] shadow-[0_8px_36px_rgba(0,0,0,0.04)] p-6 sm:p-9 lg:p-10 relative overflow-hidden">
+        <div className="apple-card rounded-[28px] sm:rounded-[36px] bg-[#FAF9F5] border border-[#E2DFD7] shadow-[0_8px_36px_rgba(25,25,25,0.03)] p-6 sm:p-9 lg:p-10 relative overflow-hidden">
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-7 sm:gap-9 items-center">
             
             {/* Left Column: Authentic Executive Keynote Photograph */}
             <div className="md:col-span-5 lg:col-span-4 flex flex-col items-center sm:items-start">
-              <div className="relative w-full max-w-[280px] md:max-w-none aspect-[4/5] rounded-[22px] overflow-hidden border border-black/[0.08] shadow-[0_8px_24px_rgba(0,0,0,0.08)] bg-[#1D1D1F] group">
+              <div className="relative w-full max-w-[280px] md:max-w-none aspect-[4/5] rounded-[22px] overflow-hidden border border-[#E2DFD7] shadow-[0_8px_24px_rgba(25,25,25,0.06)] bg-[#191919] group">
                 <Image
                   src="/images/founder.jpg"
                   alt="Shibabrata Ghosh, Founder of Tessimo Agency"
@@ -80,14 +80,14 @@ export function FounderSection() {
             <div className="md:col-span-7 lg:col-span-8 space-y-4 text-left">
               
               {/* Eyebrow Label */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5F5F7] border border-black/[0.06] text-xs font-mono font-medium text-[#0D9488] shadow-2xs">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F1EB] border border-[#E2DFD7] text-xs font-mono font-medium text-[#0D9488] shadow-2xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
                 <span>LEADERSHIP & ENGINEERING INTEGRITY</span>
               </div>
 
               {/* Title & Role */}
               <div className="space-y-1">
-                <h3 className="text-2xl sm:text-3xl font-semibold text-[#1D1D1F] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-semibold text-[#191919] tracking-tight">
                   Shibabrata Ghosh
                 </h3>
                 <p className="text-xs sm:text-sm font-medium text-[#0D9488]">
@@ -96,7 +96,7 @@ export function FounderSection() {
               </div>
 
               {/* Compact Statement */}
-              <blockquote className="text-xs sm:text-sm text-[#1D1D1F] leading-relaxed font-normal bg-[#FBFBFD] p-4 rounded-2xl border border-black/[0.05]">
+              <blockquote className="text-xs sm:text-sm text-[#191919] leading-relaxed font-normal bg-[#F3F1EB] p-4 rounded-2xl border border-[#E2DFD7]">
                 &quot;We founded Tessimo to eliminate traditional agency bloat. No 3-month delays, no bureaucratic account managers, and zero junior handoffs. Every platform and AI system is built with obsessive craft and sub-second performance. You have my direct personal commitment to your business momentum.&quot;
               </blockquote>
 
@@ -116,7 +116,7 @@ export function FounderSection() {
 
                 <a
                   href="mailto:shibabrata@tessimo.in"
-                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#F5F5F7] text-[#1D1D1F] hover:bg-[#EBEBEF] border border-black/[0.08] text-xs font-mono font-semibold transition-all shadow-2xs"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#F3F1EB] text-[#191919] hover:bg-[#EAE7DF] border border-[#E2DFD7] text-xs font-mono font-semibold transition-all shadow-2xs"
                   aria-label="Email Shibabrata Ghosh directly"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#0D9488]" />
@@ -127,7 +127,7 @@ export function FounderSection() {
                   href="https://github.com/ghosh-shibabrata"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#1D1D1F] text-white hover:bg-black text-xs font-medium transition-all shadow-2xs"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#191919] text-[#FAF9F5] hover:bg-[#2B2B2B] text-xs font-medium transition-all shadow-2xs"
                   aria-label="View Shibabrata Ghosh on GitHub"
                 >
                   <GitHubIcon className="w-3.5 h-3.5" />
@@ -136,7 +136,7 @@ export function FounderSection() {
               </div>
 
               {/* Bottom Trust & CTA Row */}
-              <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t border-black/[0.06] text-xs text-[#6E6E73]">
+              <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t border-[#E2DFD7] text-xs text-[#66635E]">
                 <div className="flex items-center gap-2 font-mono text-[11px] text-[#0D9488] font-semibold">
                   <ShieldCheck className="w-4 h-4 text-[#0D9488] shrink-0" />
                   <span>GUARANTEED UNDER 2-HOUR RESPONSE PROTOCOL</span>
