@@ -280,15 +280,16 @@
   background: linear-gradient(
     90deg,
     #0D9488 0%,
-    #0F766E 40%,
-    #14B8A6 60%,
+    #0F766E 25%,
+    #2DD4BF 50%,
+    #0F766E 75%,
     #0D9488 100%
   );
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: shimmer 6s linear infinite;
+  animation: shimmer 5s ease-in-out infinite;
 }
 
 @keyframes shimmer {

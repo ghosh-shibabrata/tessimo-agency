@@ -22,6 +22,13 @@ export interface AgencyKnowledge {
   tagline: string;
   mission: string;
   email: string;
+  founder: {
+    name: string;
+    role: string;
+    linkedin: string;
+    github: string;
+    bio: string;
+  };
   responseProtocol: string;
   supportAvailability: string;
   demoDuration: string;
@@ -62,6 +69,13 @@ export const TESSIMO_KNOWLEDGE: AgencyKnowledge = {
   mission:
     "We build premium websites that turn visitors into booked clients, and 24/7 AI systems that automatically answer inquiries and schedule appointments.",
   email: "hello@tessimo.in",
+  founder: {
+    name: "Shibabrata Ghosh",
+    role: "Founder & Lead Creative Technologist",
+    linkedin: "https://www.linkedin.com/in/shibabrata-ghosh/",
+    github: "https://github.com/ghosh-shibabrata",
+    bio: "Systems architect and creative technologist leading Tessimo. Personally oversees all client architectures with a guarantee of under 2-hour response, 100% IP ownership, and zero junior handoffs.",
+  },
   responseProtocol: "RESPONSE PROTOCOL: UNDER 2 BUSINESS HOURS",
   supportAvailability: "Remote Worldwide • Mon—Fri (24/7 Automated Ingestion)",
   demoDuration: "15-minute executive consultation",

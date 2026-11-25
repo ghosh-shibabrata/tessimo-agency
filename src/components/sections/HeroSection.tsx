@@ -73,21 +73,41 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[92vh] flex flex-col items-center justify-start overflow-hidden bg-[#FBFBFD] pt-8 sm:pt-12 pb-14 sm:pb-20 lg:pb-28">
       
-      {/* 1. Subtle Ambient Backlight on Off-White Canvas */}
+      {/* 1. Subtle Ambient Backlight on Off-White Canvas with Living Breath Motion */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft centered jade atmospheric halo */}
-        <div
-          className="absolute -top-[10%] left-1/2 -translate-x-1/2 w-[700px] lg:w-[1000px] h-[500px] rounded-full opacity-30"
+        {/* Soft centered jade atmospheric halo with slow living pulse */}
+        <motion.div
+          animate={{
+            scale: [1, 1.08, 0.98, 1],
+            opacity: [0.28, 0.44, 0.28],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute -top-[10%] left-1/2 -translate-x-1/2 w-[720px] lg:w-[1040px] h-[520px] rounded-full"
           style={{
             background:
-              "radial-gradient(ellipse 65% 50% at 50% 0%, rgba(13, 148, 136, 0.12) 0%, rgba(13, 148, 136, 0.02) 50%, transparent 75%)",
+              "radial-gradient(ellipse 65% 50% at 50% 0%, rgba(13, 148, 136, 0.16) 0%, rgba(13, 148, 136, 0.03) 50%, transparent 75%)",
           }}
         />
 
-        {/* Sculpted Monogram in Background */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[10%] lg:top-[6%] opacity-[0.03] pointer-events-none select-none text-[#1D1D1F]">
+        {/* Sculpted Monogram in Background with gentle float */}
+        <motion.div
+          animate={{
+            rotate: [0, 2, -2, 0],
+            y: [0, -6, 0],
+          }}
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute left-1/2 -translate-x-1/2 top-[10%] lg:top-[6%] opacity-[0.035] pointer-events-none select-none text-[#1D1D1F]"
+        >
           <TessimoIcon size={750} variant="solid" />
-        </div>
+        </motion.div>
       </div>
 
       {/* 2. Apple Editorial Headline & Value Proposition for Business Owners */}
@@ -100,8 +120,9 @@ export function HeroSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="inline-flex items-center gap-2"
         >
-          <span className="text-apple-eyebrow">
-            BUILT FOR MODERN BUSINESSES
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-black/[0.08] shadow-2xs text-[11px] font-mono font-medium text-[#1D1D1F] tracking-wider uppercase">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488] animate-pulse" />
+            <span>BUILT FOR MODERN BUSINESSES</span>
           </span>
         </motion.div>
 
@@ -139,38 +160,50 @@ export function HeroSection() {
         >
           <Link
             href="#contact"
-            className="btn-apple-primary w-full sm:w-auto !py-3 !px-7 text-sm font-semibold"
+            className="group btn-apple-primary w-full sm:w-auto !py-3 !px-7 text-sm font-semibold shadow-md hover:shadow-lg transition-all"
           >
             <span>Start a project</span>
-            <ArrowUpRight className="w-4 h-4 opacity-70" />
+            <ArrowUpRight className="w-4 h-4 opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
 
           <Link
             href="#contact"
-            className="btn-apple-secondary w-full sm:w-auto !py-3 !px-7 text-sm font-semibold flex items-center justify-center gap-2"
+            className="group btn-apple-secondary w-full sm:w-auto !py-3 !px-7 text-sm font-semibold flex items-center justify-center gap-2 hover:border-[#0D9488]/40 transition-all"
           >
-            <Calendar className="w-4 h-4 text-[#0D9488]" />
+            <Calendar className="w-4 h-4 text-[#0D9488] group-hover:scale-110 transition-transform" />
             <span>Book a 15-min demo</span>
           </Link>
         </motion.div>
 
-        {/* Capability Badges: Clean, spacious, mobile-wrapped */}
+        {/* Capability Badges with Gentle Levitating Zero-Gravity Motion */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-          className="pt-6 flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto"
+          className="pt-6 flex flex-wrap items-center justify-center gap-2.5 max-w-2xl mx-auto"
         >
-          {businessPills.map((pill) => {
+          {businessPills.map((pill, idx) => {
             const IconComp = pill.icon;
             return (
-              <div
+              <motion.div
                 key={pill.name}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-black/[0.08] text-xs font-medium text-[#1D1D1F] shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-[#0D9488]/40 transition-all cursor-default"
+                animate={{
+                  y: [0, -3.5, 0],
+                }}
+                transition={{
+                  duration: 3.5 + (idx % 3) * 0.6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: idx * 0.25,
+                }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="group inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-black/[0.08] text-xs font-medium text-[#1D1D1F] shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:border-[#0D9488]/40 hover:shadow-[0_8px_20px_rgba(13,148,136,0.12)] transition-all cursor-default"
               >
-                <IconComp className="w-3.5 h-3.5 text-[#0D9488]" />
+                <span className="p-0.5 rounded-full bg-[#0D9488]/10 group-hover:bg-[#0D9488]/20 transition-colors">
+                  <IconComp className="w-3.5 h-3.5 text-[#0D9488]" />
+                </span>
                 <span>{pill.name}</span>
-              </div>
+              </motion.div>
             );
           })}
         </motion.div>

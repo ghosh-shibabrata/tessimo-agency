@@ -11,7 +11,8 @@ const NAV_LINKS = [
   { name: "Work", href: "#work" },
   { name: "Automation", href: "#approach" },
   { name: "Pricing", href: "#pricing" },
-  { name: "About", href: "#about" },
+  { name: "Founder", href: "#founder" },
+  { name: "Insights", href: "#blog" },
   { name: "Contact", href: "#contact" },
 ];
 

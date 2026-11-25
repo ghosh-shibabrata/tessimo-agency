@@ -45,11 +45,12 @@ export function Footer() {
 
   const agencyLinks = [
     { name: "About Tessimo", href: "#about" },
+    { name: "Founder & Leadership", href: "#founder" },
+    { name: "Editorial Insights", href: "#blog" },
     { name: "Selected Work", href: "#work" },
     { name: "Investment Models", href: "#pricing" },
     { name: "Start a Project", href: "#contact" },
     { name: "Privacy & Ownership", href: "#contact" },
-    { name: "System Status", href: "#contact" },
   ];
 
   return (

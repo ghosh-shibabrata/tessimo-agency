@@ -48,6 +48,7 @@ const SYNONYMS: Record<string, string[]> = {
   international: ["international", "global", "usa", "us", "uk", "dollar", "dollars", "$", "usd", "foreign", "abroad", "outside"],
   tech: ["tech", "technology", "stack", "framework", "code", "nextjs", "react", "tailwind", "typescript", "supabase"],
   ownership: ["ownership", "ip", "intellectual", "property", "code", "repository", "github", "copyright", "owner", "haq"],
+  founder: ["founder", "shibabrata", "ghosh", "shiba", "creator", "architect", "linkedin", "ceo", "who made", "founder kaun hai", "founder kaun"],
 };
 
 function normalizeText(text: string): string {
@@ -98,6 +99,7 @@ export function processTessimoAIQuery(
   const starterScore = computeRelevance(tokens, SYNONYMS.starter);
   const goldScore = computeRelevance(tokens, SYNONYMS.gold);
   const premiumScore = computeRelevance(tokens, SYNONYMS.premium);
+  const founderScore = computeRelevance(tokens, SYNONYMS.founder);
 
   // 1. GREETINGS
   if (
@@ -123,6 +125,25 @@ export function processTessimoAIQuery(
         label: "Book a 15-min Demo",
         type: "scroll",
         value: "#contact",
+      },
+    };
+  }
+
+  // 1.5 FOUNDER & LEADERSHIP
+  if (founderScore > 0 || tokens.includes("shibabrata") || tokens.includes("ghosh") || tokens.includes("founder")) {
+    return {
+      id: "founder-profile",
+      intent: "FOUNDER",
+      text: `### Shibabrata Ghosh — Founder & Lead Technologist\n\nTessimo was founded and is directed by **Shibabrata Ghosh**.\n\n• **Role**: Founder & Lead Creative Technologist\n• **Direct Oversight**: Shibabrata personally architects and reviews all client platforms with zero junior handoffs.\n• **LinkedIn**: [linkedin.com/in/shibabrata-ghosh](https://www.linkedin.com/in/shibabrata-ghosh/)\n• **GitHub**: [github.com/ghosh-shibabrata](https://github.com/ghosh-shibabrata)\n• **Direct Email**: [hello@tessimo.in](mailto:hello@tessimo.in)\n\nShibabrata guarantees our under 2-hour executive response protocol and 100% intellectual property ownership.`,
+      suggestedPills: [
+        "View Founder Section",
+        "Website Pricing",
+        "Book a 15-min Demo",
+      ],
+      action: {
+        label: "View Founder Section",
+        type: "scroll",
+        value: "#founder",
       },
     };
   }
