@@ -172,12 +172,12 @@ export function Navbar() {
                   }}
                   className="w-full flex items-center justify-between p-3.5 rounded-2xl bg-[#0D9488]/10 border border-[#0D9488]/20 text-xs font-semibold text-[#0D9488] hover:bg-[#0D9488]/15 transition-colors"
                 >
-                  <div className="flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-[#0D9488]" />
-                    <span>Launch Tessimo AI Assistant</span>
+                  <div className="flex items-center gap-2.5">
+                    <TessimoIcon size={18} variant="teal" />
+                    <span>Tessimo AI Assistant</span>
                   </div>
                   <span className="text-[10px] font-mono uppercase bg-white px-2 py-0.5 rounded-full border border-[#0D9488]/20">
-                    Zero-API Core
+                    Instant
                   </span>
                 </button>
 

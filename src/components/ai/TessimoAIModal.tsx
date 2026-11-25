@@ -157,33 +157,33 @@ export function TessimoAIModal({ isOpen, onClose, initialQuery }: TessimoAIModal
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/50 backdrop-blur-sm animate-fade-in">
       <motion.div
-        initial={{ opacity: 0, scale: 0.95, y: 16 }}
+        initial={{ opacity: 0, scale: 0.95, y: 24 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.95, y: 16 }}
+        exit={{ opacity: 0, scale: 0.95, y: 24 }}
         transition={{ duration: 0.22, ease: "easeOut" }}
-        className="relative w-full max-w-[620px] h-[85vh] max-h-[740px] bg-[#FBFBFD] rounded-[28px] border border-black/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.18)] flex flex-col overflow-hidden"
+        className="relative w-full max-w-[620px] h-[92vh] sm:h-[85vh] max-h-[740px] bg-[#FBFBFD] rounded-t-[28px] sm:rounded-[28px] border-t sm:border border-black/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.18)] flex flex-col overflow-hidden"
       >
         {/* ================================================================
             MODAL HEADER: Apple Luxury Bar
            ================================================================ */}
-        <div className="px-5 py-4 bg-white/80 backdrop-blur-md border-b border-black/[0.06] flex items-center justify-between shrink-0">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#0D9488]/10 border border-[#0D9488]/20 flex items-center justify-center shadow-xs">
+        <div className="px-4 py-3 sm:px-5 sm:py-4 bg-white/80 backdrop-blur-md border-b border-black/[0.06] flex items-center justify-between shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#0D9488]/10 border border-[#0D9488]/20 flex items-center justify-center shadow-xs shrink-0">
               <TessimoIcon size={18} variant="teal" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <h3 className="text-sm font-semibold text-[#1D1D1F] tracking-tight">
                   Tessimo AI
                 </h3>
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-mono font-medium bg-[#0D9488]/10 text-[#0D9488] border border-[#0D9488]/20">
+                <span className="inline-flex items-center gap-1 px-1.5 sm:px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-mono font-medium bg-[#0D9488]/10 text-[#0D9488] border border-[#0D9488]/20">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488] animate-pulse" />
-                  Zero-API Core
+                  Zero-API
                 </span>
               </div>
-              <p className="text-[11px] text-[#6E6E73] font-normal">
+              <p className="hidden sm:block text-[11px] text-[#6E6E73] font-normal">
                 Proprietary Agency Knowledge Base • Instant Latency
               </p>
             </div>
@@ -541,7 +541,7 @@ export function TessimoAIModal({ isOpen, onClose, initialQuery }: TessimoAIModal
         {/* ================================================================
             MODAL INPUT FOOTER: Apple Capsule Input
            ================================================================ */}
-        <div className="p-4 bg-white/90 backdrop-blur-md border-t border-black/[0.06] shrink-0">
+        <div className="p-3 sm:p-4 bg-white/95 backdrop-blur-md border-t border-black/[0.06] shrink-0">
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -555,25 +555,25 @@ export function TessimoAIModal({ isOpen, onClose, initialQuery }: TessimoAIModal
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask Tessimo AI about pricing, automation, delivery..."
-                className="w-full h-11 pl-4 pr-10 rounded-full bg-[#F5F5F7] border border-black/[0.08] text-xs sm:text-sm text-[#1D1D1F] placeholder:text-[#86868B] focus:outline-none focus:bg-white focus:border-[#1D1D1F] transition-colors"
+                placeholder="Ask about pricing, automation, delivery..."
+                className="w-full h-10 sm:h-11 pl-3.5 pr-8 sm:pl-4 sm:pr-10 rounded-full bg-[#F5F5F7] border border-black/[0.08] text-xs sm:text-sm text-[#1D1D1F] placeholder:text-[#86868B] focus:outline-none focus:bg-white focus:border-[#1D1D1F] transition-colors"
               />
-              <Sparkles className="w-4 h-4 text-[#0D9488] absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none opacity-80" />
+              <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0D9488] absolute right-3 sm:right-3.5 top-1/2 -translate-y-1/2 pointer-events-none opacity-80" />
             </div>
 
             <button
               type="submit"
               disabled={!input.trim()}
-              className="w-11 h-11 rounded-full bg-[#1D1D1F] text-white flex items-center justify-center hover:bg-black transition-all disabled:opacity-40 disabled:cursor-not-allowed shrink-0 shadow-xs"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#1D1D1F] text-white flex items-center justify-center hover:bg-black transition-all disabled:opacity-40 disabled:cursor-not-allowed shrink-0 shadow-xs cursor-pointer"
               aria-label="Send query"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </button>
           </form>
 
-          <div className="pt-2 text-center">
-            <span className="text-[10px] font-mono text-[#86868B]">
-              Tessimo AI Proprietary Knowledge Engine • Zero GenAI API • 100% Deterministic & Private
+          <div className="pt-1.5 sm:pt-2 text-center">
+            <span className="text-[9px] sm:text-[10px] font-mono text-[#86868B] block truncate">
+              Tessimo AI • Zero-API Architecture • 100% Private & Instant
             </span>
           </div>
         </div>
